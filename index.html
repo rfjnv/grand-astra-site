@@ -179,6 +179,14 @@ section{padding:clamp(80px,11vw,140px) 0}
 .pdf{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:#55555c;white-space:nowrap}
 .pdf:hover{color:var(--onyx)}
 .pdf svg{width:15px;height:15px}
+.port{margin-top:72px}
+.port-head{margin-bottom:28px}
+.port-head h3{font-size:clamp(28px,3.4vw,38px);margin:12px 0 12px}
+.grid.two{grid-template-columns:1fr 1fr}
+.grid.two .ph{aspect-ratio:16/10}
+.card.leased .badge{background:var(--bronze);color:#fff}
+.pdesc{color:#55555c;font-size:15px}
+@media (max-width:640px){.grid.two{grid-template-columns:1fr}}
 /* locations */
 .locs{display:grid;grid-template-columns:1fr 1fr;gap:24px}
 .locc{padding:32px;border-radius:var(--r);background:var(--white);display:flex;flex-direction:column;gap:14px}
@@ -452,46 +460,31 @@ html.lenis,html.lenis body{height:auto}
             </div>
           </div>
         </article>
-        <article class="card reveal" data-type="building">
-          <div class="ph"><img src="img/muqimiy-facade-s.webp" alt="Two-storey restaurant building on Muqimiy street, Tashkent" loading="lazy"><span class="badge">Café &amp; restaurant</span></div>
+      </div>
+      <div class="port">
+        <div class="port-head reveal">
+          <p class="eyebrow">Portfolio</p>
+          <h3>Buildings already leased</h3>
+          <p class="lead">Part of our portfolio is fully occupied. Leave a request and we’ll tell you first when space becomes available.</p>
+        </div>
+        <div class="grid two">
+        <article class="card reveal leased">
+          <div class="ph"><img src="img/muqimiy-facade-s.webp" alt="Two-storey restaurant building on Muqimiy street, Tashkent" loading="lazy"><span class="badge">Leased</span></div>
           <div class="body">
             <span class="loc">Muqimiy St 3/2, Tashkent</span>
             <h3>Restaurant building</h3>
-            <dl class="specs">
-              <div><dt>Area</dt><dd class="na">On request</dd></div>
-              <div><dt>Ceiling height</dt><dd class="na">On request</dd></div>
-              <div><dt>Power</dt><dd class="na">On request</dd></div>
-              <div><dt>Floors</dt><dd>2 · dining halls on both floors</dd></div>
-              <div><dt>Access</dt><dd>First line, panoramic windows</dd></div>
-            </dl>
-            <div class="foot">
-              <span class="price"><b>On request</b>cafés, restaurants, showrooms</span>
-              <span class="links">
-                <a class="more" href="#contact">Request details →</a>
-              </span>
-            </div>
+            <p class="pdesc">Two floors with dining halls and panoramic windows on the first line of the street. Leased to a restaurant.</p>
           </div>
         </article>
-        <article class="card reveal" data-type="warehouse">
-          <div class="ph"><img src="img/wh2-yard-s.webp" alt="Warehouse with two truck gates and a concrete yard" loading="lazy"><span class="badge">Warehouse</span></div>
+        <article class="card reveal leased">
+          <div class="ph"><img src="img/wh2-yard-s.webp" alt="Warehouse with two truck gates and a concrete yard" loading="lazy"><span class="badge">Leased</span></div>
           <div class="body">
-            <span class="loc">Tashkent · address on request</span>
+            <span class="loc">Tashkent</span>
             <h3>Warehouse with offices</h3>
-            <dl class="specs">
-              <div><dt>Area</dt><dd class="na">On request</dd></div>
-              <div><dt>Ceiling height</dt><dd class="na">On request</dd></div>
-              <div><dt>Power</dt><dd class="na">On request</dd></div>
-              <div><dt>Floors</dt><dd>Open hall + office rooms</dd></div>
-              <div><dt>Access</dt><dd>2 truck gates, concrete yard</dd></div>
-            </dl>
-            <div class="foot">
-              <span class="price"><b>On request</b>storage, light production</span>
-              <span class="links">
-                <a class="more" href="#contact">Request details →</a>
-              </span>
-            </div>
+            <p class="pdesc">Open hall with two truck gates, a concrete yard and office rooms. Leased.</p>
           </div>
         </article>
+        </div>
       </div>
       <div class="grid" style="margin-top:24px">
         <article class="card card-cta reveal" style="grid-column:1/-1">

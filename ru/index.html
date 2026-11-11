@@ -179,6 +179,14 @@ section{padding:clamp(80px,11vw,140px) 0}
 .pdf{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:#55555c;white-space:nowrap}
 .pdf:hover{color:var(--onyx)}
 .pdf svg{width:15px;height:15px}
+.port{margin-top:72px}
+.port-head{margin-bottom:28px}
+.port-head h3{font-size:clamp(28px,3.4vw,38px);margin:12px 0 12px}
+.grid.two{grid-template-columns:1fr 1fr}
+.grid.two .ph{aspect-ratio:16/10}
+.card.leased .badge{background:var(--bronze);color:#fff}
+.pdesc{color:#55555c;font-size:15px}
+@media (max-width:640px){.grid.two{grid-template-columns:1fr}}
 /* locations */
 .locs{display:grid;grid-template-columns:1fr 1fr;gap:24px}
 .locc{padding:32px;border-radius:var(--r);background:var(--white);display:flex;flex-direction:column;gap:14px}
@@ -452,46 +460,31 @@ html.lenis,html.lenis body{height:auto}
             </div>
           </div>
         </article>
-        <article class="card reveal" data-type="building">
-          <div class="ph"><img src="../img/muqimiy-facade-s.webp" alt="Двухэтажное здание под ресторан на улице Мукими, Ташкент" loading="lazy"><span class="badge">Кафе и ресторан</span></div>
+      </div>
+      <div class="port">
+        <div class="port-head reveal">
+          <p class="eyebrow">Портфель</p>
+          <h3>Здания, которые уже сданы</h3>
+          <p class="lead">Часть наших зданий полностью занята арендаторами. Оставьте заявку — сообщим первыми, когда площадь освободится.</p>
+        </div>
+        <div class="grid two">
+        <article class="card reveal leased">
+          <div class="ph"><img src="../img/muqimiy-facade-s.webp" alt="Двухэтажное здание под ресторан на улице Мукими, Ташкент" loading="lazy"><span class="badge">Сдано</span></div>
           <div class="body">
             <span class="loc">ул. Мукими 3/2, Ташкент</span>
             <h3>Здание под ресторан</h3>
-            <dl class="specs">
-              <div><dt>Площадь</dt><dd class="na">По запросу</dd></div>
-              <div><dt>Потолки</dt><dd class="na">По запросу</dd></div>
-              <div><dt>Мощность</dt><dd class="na">По запросу</dd></div>
-              <div><dt>Этажи</dt><dd>2 · залы на обоих этажах</dd></div>
-              <div><dt>Подъезд</dt><dd>Первая линия, панорамные окна</dd></div>
-            </dl>
-            <div class="foot">
-              <span class="price"><b>По запросу</b>кафе, рестораны, шоурумы</span>
-              <span class="links">
-                <a class="more" href="#contact">Узнать подробности →</a>
-              </span>
-            </div>
+            <p class="pdesc">Два этажа с залами и панорамными окнами на первой линии улицы. Сдано ресторану.</p>
           </div>
         </article>
-        <article class="card reveal" data-type="warehouse">
-          <div class="ph"><img src="../img/wh2-yard-s.webp" alt="Склад с двумя грузовыми воротами и бетонным двором" loading="lazy"><span class="badge">Склад</span></div>
+        <article class="card reveal leased">
+          <div class="ph"><img src="../img/wh2-yard-s.webp" alt="Склад с двумя грузовыми воротами и бетонным двором" loading="lazy"><span class="badge">Сдано</span></div>
           <div class="body">
-            <span class="loc">Ташкент · адрес по запросу</span>
+            <span class="loc">Ташкент</span>
             <h3>Склад с офисами</h3>
-            <dl class="specs">
-              <div><dt>Площадь</dt><dd class="na">По запросу</dd></div>
-              <div><dt>Потолки</dt><dd class="na">По запросу</dd></div>
-              <div><dt>Мощность</dt><dd class="na">По запросу</dd></div>
-              <div><dt>Этажи</dt><dd>Зал + офисные помещения</dd></div>
-              <div><dt>Подъезд</dt><dd>2 грузовых ворот, бетонный двор</dd></div>
-            </dl>
-            <div class="foot">
-              <span class="price"><b>По запросу</b>хранение, лёгкое производство</span>
-              <span class="links">
-                <a class="more" href="#contact">Узнать подробности →</a>
-              </span>
-            </div>
+            <p class="pdesc">Зал с двумя грузовыми воротами, бетонный двор и офисные помещения. Сдано.</p>
           </div>
         </article>
+        </div>
       </div>
       <div class="grid" style="margin-top:24px">
         <article class="card card-cta reveal" style="grid-column:1/-1">
