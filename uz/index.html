@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Grand Astra — Toşkentda tijorat köçmas mulki</title>
-<meta name="description" content="Grand Astra Toşkentda mahalliy va xorijiy kompaniyalarga omborlar, ofislar va tijorat binolarini quradi va ijaraga beradi.">
-<meta property="og:title" content="Grand Astra — Özbekistondagi işçi bazangiz">
-<meta property="og:description" content="Toşkentda omborlar, ofislar va tijorat binolari ijaraga — mahalliy va xorijiy kompaniyalar uçun.">
+<title>Grand Astra — Toşkentdagi quriliş kompaniyasi</title>
+<meta name="description" content="Grand Astra Toşkentda omborlar, işlab çiqariş obyektlari, ofislar va tijorat binolarini quradi hamda xalqaro kompaniyalar bilan hamkorlikka tayyor.">
+<meta property="og:title" content="Grand Astra — Özbekistondagi quriliş hamkoringiz">
+<meta property="og:description" content="Toşkentda omborlar, işlab çiqariş obyektlari, ofislar va tijorat binolarini quramiz. Xalqaro kompaniyalar bilan hamkorlikka tayyormiz.">
 <meta property="og:image" content="https://rfjnv.github.io/grand-astra-site/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -136,7 +136,7 @@ section{padding:clamp(80px,11vw,140px) 0}
 .sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;margin-bottom:48px}
 .sec-head h2{margin-top:14px;max-width:720px}
 .light{background:var(--ivory);color:var(--onyx)}
-.light .eyebrow{color:#6b6b73}
+.light .eyebrow{color:#5c5c63}
 .light .lead{color:#55555c}
 
 /* directions */
@@ -207,10 +207,9 @@ section{padding:clamp(80px,11vw,140px) 0}
 .kit a{display:grid;place-items:center;min-width:44px;height:36px;padding:0 10px;border-radius:999px;border:1px solid rgba(230,230,234,.2);font-size:12px;font-weight:600;letter-spacing:.06em;color:var(--silver)}
 .kit a:hover{border-color:var(--silver-1);color:var(--white)}
 @media (max-width:860px){.brokers{grid-template-columns:1fr}}
-@media (min-width:900px){#brokers{padding-bottom:clamp(160px,52vh,560px)}}
+
 /* mobile polish */
 @media (max-width:720px){
-  #brokers{padding-bottom:48vh}
   .specs dt,.card .badge,.dir .tag,.eyebrow{font-size:12px}
   .links a{padding:9px 0}
   .person a.tel{display:inline-block;padding:6px 0}
@@ -395,6 +394,53 @@ footer{background:var(--onyx);padding-top:0;overflow:hidden}
   .mq-t,.fmark,.cue::after{animation:none}
   .cur{display:none}
 }
+/* ===== CONSTRUCTION-COMPANY SECTIONS ===== */
+#partners{position:relative}
+@media (min-width:900px){#partners{padding-bottom:clamp(160px,52vh,560px)}}
+@media (max-width:720px){#partners{padding-bottom:48vh}}
+#partners::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(55% 45% at 0% 0%,rgba(176,141,60,.10),transparent 70%)}
+#process{position:relative}
+#process::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(50% 45% at 100% 20%,rgba(176,141,60,.08),transparent 70%)}
+.pgrid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,6vw,88px);align-items:start;margin-top:8px}
+.psteps{list-style:none;grid-column:1;grid-row:1}
+.pmedia{grid-column:2;grid-row:1;position:sticky;top:104px;aspect-ratio:4/3.1;border-radius:6px;overflow:hidden;background:#15151a;border:1px solid rgba(230,230,234,.09)}
+.sm{position:absolute;inset:0;margin:0;opacity:0;transition:opacity .9s ease}
+.sm.on{opacity:1}
+.sm img{width:100%;height:100%;object-fit:cover;transform:scale(1.06);transition:transform 7s ease}
+.sm.on img{transform:scale(1)}
+.pcap{position:absolute;left:0;right:0;bottom:0;margin:0;padding:48px 20px 16px;font-size:12.5px;color:var(--silver);background:linear-gradient(0deg,rgba(14,14,17,.88),transparent);letter-spacing:.02em}
+.bp-wrap{background-color:#15151a;background-image:linear-gradient(rgba(212,175,55,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(212,175,55,.08) 1px,transparent 1px);background-size:24px 24px;display:grid;place-items:center}
+.bp{width:86%;height:auto}
+.bp-o{fill:rgba(212,175,55,.07);stroke:var(--bronze-l);stroke-width:2}
+.bp-i{fill:none;stroke:rgba(199,199,204,.55);stroke-width:1}
+.bp-d{fill:none;stroke:rgba(199,199,204,.4);stroke-width:1}
+.bp-c circle{fill:var(--silver-1)}
+.pstep{padding:46px 0;border-top:1px solid rgba(230,230,234,.12);min-height:44vh;opacity:.34;transition:opacity .5s}
+.pstep.on{opacity:1}
+.pn{font:500 46px/1 var(--serif);color:transparent;-webkit-text-stroke:1px rgba(212,175,55,.8);display:block;margin-bottom:16px}
+.pstep h3{font-size:clamp(28px,3.4vw,40px);color:var(--white);font-weight:500;margin-bottom:12px}
+.pstep p{color:var(--steel);max-width:480px;font-size:17px}
+.step-img{display:none}
+@media (max-width:900px){
+  .pgrid{display:block}
+  .pmedia{display:none}
+  .pstep{opacity:1;min-height:0;padding:36px 0}
+  .step-img{display:block;margin-top:22px;border-radius:6px;overflow:hidden;aspect-ratio:4/3}
+  .step-img img{width:100%;height:100%;object-fit:cover}
+}
+@media (min-width:900px){
+  #partners .sec-head{display:block}
+  #partners .sec-head h2{max-width:600px}
+  #partners .sec-head .lead{max-width:540px;margin-top:22px}
+}
+.card-cta .eyebrow,.light .card-cta .eyebrow{color:var(--steel)}
+/* contrast fixes (WCAG AA) */
+.specs dt,.note,.card .loc{color:#62626a}
+.more{color:#7C5F17}
+.hero .lead,.hero .facts span{color:#C9C9CE}
+.brand small{font-size:10px}
+@media (max-width:440px){.brand small{font-size:9px}}
+@media (max-width:360px){.brand small{font-size:9px}}
 </style>
 <script>try{if(sessionStorage.gaSeen)document.documentElement.className+=' seen';sessionStorage.gaSeen=1}catch(e){}</script>
 </head>
@@ -409,13 +455,15 @@ footer{background:var(--onyx);padding-top:0;overflow:hidden}
       <img src="../img/emblem.svg" alt="" width="25" height="38">
       <span><b>Grand Astra</b><small>Commercial Real Estate</small></span>
     </a>
-    <nav class="nav" id="nav">
-      <a href="#spaces">Obyektlar</a>
-      <a href="#services">Xizmatlar</a>
-      <a href="#how">Qanday işlaymiz</a>
+    <!--NAV:START-->
+<nav class="nav" id="nav">
+      <a href="#projects">Obyektlar</a>
+      <a href="#process">Jarayon</a>
+      <a href="#partners">Hamkorlar</a>
       <a href="#contact">Aloqa</a>
-      <a class="btn btn-light" href="#contact">Körişga yoziliş</a>
+      <a class="btn btn-light" href="#contact">Hamkorlik</a>
     </nav>
+<!--NAV:END-->
     <span class="lang" role="group" aria-label="Til"><a href="../" hreflang="en" lang="en" title="In English">EN</a><a href="../ru/" hreflang="ru" lang="ru" title="На русском">RU</a><b aria-current="true">UZ</b></span>
     <button class="menu-btn" id="menuBtn" aria-label="Menyu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
   </div>
@@ -423,287 +471,219 @@ footer{background:var(--onyx);padding-top:0;overflow:hidden}
 
 <div id="build-bg" aria-hidden="true"></div>
 <main id="top">
+<!--MAIN:START-->
   <section class="hero">
     <div class="hero-media" id="heroMedia">
       <picture class="slide on">
         <source media="(max-width:720px)" srcset="../img/court-arch-s.webp">
-        <img src="../img/court-arch.webp" alt="Grand Astra tijorat binosining içki hovlisi, Oltinsoy 8/3, Toşkent" fetchpriority="high">
+        <img src="../img/court-arch.webp" alt="Toşkentdagi Oltinsoy 8/3 binosining içki hovlisi" fetchpriority="high">
       </picture>
+      <div class="slide" data-bg="../img/structure.webp" data-bg-s="../img/structure-s.webp" aria-hidden="true"></div>
       <div class="slide" data-bg="../img/facade.webp" data-bg-s="../img/facade-s.webp" aria-hidden="true"></div>
-      <div class="slide" data-bg="../img/s303-hall.webp" data-bg-s="../img/s303-hall-s.webp" aria-hidden="true"></div>
     </div>
     <span class="cue" aria-hidden="true"></span>
     <div class="hero-dots" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
     <div class="wrap">
-      <p class="eyebrow">Tijorat köçmas mulki · Toşkent, Özbekiston</p>
-      <h1>Özbekistondagi işçi&nbsp;bazangiz</h1>
-      <p class="lead">Toşkentda mahalliy va xorijiy kompaniyalarga işga tayyor omborlar, ofislar va tijorat binolarini quramiz va ijaraga beramiz.</p>
+      <p class="eyebrow">Quriliş kompaniyasi · Toşkent, Özbekiston</p>
+      <h1>Özbekistondagi quriliş hamkoringiz</h1>
+      <p class="lead">Grand Astra Toşkentda omborlar, işlab çiqariş obyektlari, ofislar va tijorat binolarini quradi hamda xalqaro kompaniyalar bilan hamkorlikka tayyor.</p>
       <div class="ctas">
-        <a class="btn btn-light" href="#spaces">Obyektlarni köriş</a>
-        <a class="btn btn-ghost" href="#contact">Biz bilan boğlaniş</a>
+        <a class="btn btn-light" href="#process">Qanday qurayotganimizni köriş</a>
+        <a class="btn btn-ghost" href="#contact">Hamkorlikni muhokama qiliş</a>
       </div>
-      <div class="facts">
-        <div><b>303–2 000 m²</b><span>hozir böş maydonlar</span></div>
-        <div><b>350–380 kVt</b><span>Bektemirdagi omborlarda quvvat</span></div>
-        <div><b>2 tuman</b><span>Bektemir va Olmazor, Toşkent</span></div>
-        <div><b>EN · RU · UZ</b><span>sizning tilingizda gaplaşamiz</span></div>
-      </div>
+      <div class="facts"><div><b>5</b><span>portfelimizdagi binolar</span></div><div><b>5 bosqiç</b><span>loyihadan topşirişgaça</span></div><div><b>Toşkent</b><span>qurayotgan joyimiz</span></div><div><b>EN · RU · UZ</b><span>sizning tilingizda gaplaşamiz</span></div></div>
     </div>
   </section>
 
-  <div class="mq" aria-hidden="true"><div class="mq-t"><span>Omborlar · Ofislar · Tijorat binolari · Yangi quriliş · </span><span>Omborlar · Ofislar · Tijorat binolari · Yangi quriliş · </span></div></div>
+  <div class="mq" aria-hidden="true"><div class="mq-t"><span>Omborlar · Işlab çiqariş · Ofislar · Tijorat binolari · </span><span>Omborlar · Işlab çiqariş · Ofislar · Tijorat binolari · </span></div></div>
 
   <section id="services">
     <div class="wrap">
       <div class="sec-head reveal">
         <div>
-          <p class="eyebrow">Nima bilan şuğullanamiz</p>
-          <h2>Biz quramiz. Siz işlaysiz.</h2>
+          <p class="eyebrow">Nima quramiz</p>
+          <h2>Biznes uçun binolar.</h2>
         </div>
-        <p class="lead">Binongiz uçun bitta hamkor — binoning birinçi çizmasidan uzoq muddatli ijaragaça.</p>
+        <p class="lead">Biz yaxşi bilgan töğt turdagi binolar — birinçi çizmadan kalitlargaça.</p>
       </div>
       <div class="dirs">
         <article class="dir property reveal">
-          <span class="tag">Ijara</span>
-          <h3>Omborlar, ofislar va tijorat binolari</h3>
-          <p>Toşkentdagi tayyor binolarimizni ijaraga beramiz: saqlaş, işlab çiqariş, oşxona, savdo va ofislar uçun.</p>
-          <ul>
-            <li>Elektr, kommunikatsiyalar va fura kiriş yöli bor tayyor binolar</li>
-            <li>Mahalliy va xorijiy kompaniyalar uçun uzoq muddatli ijara</li>
-            <li>Saqlaş, işlab çiqariş, oşxonalar, savdo va ofislar</li>
-          </ul>
+          <span class="tag">Omborlar</span>
+          <h3>Omborlar va logistika zallari</h3>
+          <p>Fura kiriş yöli va beton hovlisi bor katta oçiq zallar.</p>
+          <ul><li>Bölmasiz oçiq zallar</li><li>Yuk darvozalari va yuk tuşiriş ayvonlari</li><li>Ajratilgan elektr quvvati</li></ul>
         </article>
-        <article class="dir new reveal">
-          <span class="tag">Quriliş</span>
-          <h3>Qurilayotgan yangi binolar</h3>
-          <p>Toşkentda qurişda davom etamiz. Talablaringizni oldindan ayting va işingizga moslab qurilgan joyni ijaraga oling.</p>
-          <ul>
-            <li>Maydon, şift balandligi va quvvat oldindan rejalaştiriladi</li>
-            <li>Fura kiriş yöli va yuk tuşiriş birinçi çizmadanoq hisobga olinadi</li>
-            <li>Yangi binolar haqida birinçi bölib biliş uçun ariza qoldiring</li>
-          </ul>
+        <article class="dir property reveal">
+          <span class="tag">Işlab çiqariş</span>
+          <h3>Işlab çiqariş va oşxona binolari</h3>
+          <p>Uskunalar, oşxonalar va sexlar uçun tayyorlangan binolar.</p>
+          <ul><li>Öğir yuklar uçun yuk liftlari</li><li>Bektemirdagi binolarimizda 380 kVt gaça</li><li>Oson moslaştiriladigan rejalar</li></ul>
+        </article>
+        <article class="dir property reveal">
+          <span class="tag">Ofislar</span>
+          <h3>Ofislar</h3>
+          <p>Katta oynali yoruğ xonalar va moslaşuvçan rejalar.</p>
+          <ul><li>Köçaga va hovliga qaragan katta oynalar</li><li>Oson bölinadigan qavatlar</li><li>Qulay kiriş va avtoturargoh</li></ul>
+        </article>
+        <article class="dir property reveal">
+          <span class="tag">Tijorat</span>
+          <h3>Tijorat binolari</h3>
+          <p>Savdo, xizmat va ommaviy foydalanış uçun birinçi qatordagi binolar.</p>
+          <ul><li>Birinçi qatorda vitrina oynalari</li><li>Ötiş yöli bor içki hovlilar</li><li>Ikki qavat va yertöla</li></ul>
         </article>
       </div>
     </div>
   </section>
 
-  <section id="spaces" class="light">
+  <section id="process">
     <div class="wrap">
       <div class="sec-head reveal">
         <div>
-          <p class="eyebrow">Böş obyektlar</p>
-          <h2>Toşkentda özingizga joy toping</h2>
+          <p class="eyebrow">Bizning jarayon</p>
+          <h2>Biz qanday qurişimiz</h2>
         </div>
-        <div class="filters" role="group" aria-label="Obyektlar filtri">
-          <button class="chip" aria-pressed="true" data-f="all">Barçasi</button>
-          <button class="chip" aria-pressed="false" data-f="warehouse">Omborlar</button>
-          <button class="chip" aria-pressed="false" data-f="building">Tijorat binolari</button>
+        <p class="lead">Har bir bino bir xil beş bosqiçdan ötadi. Har birini maydondan foto va video bilan hujjatlaştiramiz.</p>
+      </div>
+      <div class="pgrid">
+        <div class="pmedia" id="pmedia" aria-hidden="true">
+        <figure class="sm bp-wrap on"><svg class="bp" viewBox="0 0 400 300" role="img" aria-label="Loyiha hujjatlari: bino rejasi"><path class="bp-o" d="M70 60H330V240H250V130H150V240H70Z"/><path class="bp-i" d="M86 76H314V224H266V114H134V224H86Z"/><path class="bp-d" d="M70 266H330M70 259V273M330 259V273M52 60V240M45 60H59M45 240H59"/><g class="bp-c"><circle cx="86" cy="76" r="3"/><circle cx="150" cy="76" r="3"/><circle cx="214" cy="76" r="3"/><circle cx="278" cy="76" r="3"/><circle cx="314" cy="76" r="3"/><circle cx="86" cy="150" r="3"/><circle cx="86" cy="224" r="3"/><circle cx="314" cy="150" r="3"/><circle cx="314" cy="224" r="3"/><circle cx="134" cy="224" r="3"/><circle cx="266" cy="224" r="3"/></g></svg></figure>
+        <figure class="sm"><img src="../img/found.webp" alt="" loading="lazy"></figure>
+        <figure class="sm"><img src="../img/structure.webp" alt="" loading="lazy"></figure>
+        <figure class="sm"><img src="../img/windows.webp" alt="" loading="lazy"></figure>
+        <figure class="sm"><img src="../img/court-arch.webp" alt="" loading="lazy"></figure>
+          <p class="pcap">Foto: Oltinsoy 8/3 binosi, Toşkent</p>
         </div>
+        <ol class="psteps" id="psteps">
+        <li class="pstep on" data-i="0">
+          <span class="pn">01</span>
+          <h3>Loyiha</h3>
+          <p>Yer maydoni, loyiha hujjatlari va injener yuklamalari işlar boşlanmasdan oldin kelişiladi.</p>
+          <div class="step-img bp-wrap"><svg class="bp" viewBox="0 0 400 300" role="img" aria-label="Loyiha hujjatlari: bino rejasi"><path class="bp-o" d="M70 60H330V240H250V130H150V240H70Z"/><path class="bp-i" d="M86 76H314V224H266V114H134V224H86Z"/><path class="bp-d" d="M70 266H330M70 259V273M330 259V273M52 60V240M45 60H59M45 240H59"/><g class="bp-c"><circle cx="86" cy="76" r="3"/><circle cx="150" cy="76" r="3"/><circle cx="214" cy="76" r="3"/><circle cx="278" cy="76" r="3"/><circle cx="314" cy="76" r="3"/><circle cx="86" cy="150" r="3"/><circle cx="86" cy="224" r="3"/><circle cx="314" cy="150" r="3"/><circle cx="314" cy="224" r="3"/><circle cx="134" cy="224" r="3"/><circle cx="266" cy="224" r="3"/></g></svg></div>
+        </li>
+        <li class="pstep" data-i="1">
+          <span class="pn">02</span>
+          <h3>Poydevor va yertöla</h3>
+          <p>Qazilma, poydevor va yertöla qavati: butun binoni kötarib turadigan beton kolonnalar va qoplamalar.</p>
+          <div class="step-img"><img src="../img/found-s.webp" alt="Beton kolonnali yertöla qavati" loading="lazy"></div>
+        </li>
+        <li class="pstep" data-i="2">
+          <span class="pn">03</span>
+          <h3>Karkas va qoplamalar</h3>
+          <p>Kolonnalar, tösinlar va qavat qoplamalari qavatma-qavat kötariladi va bino töliq şaklini oladi.</p>
+          <div class="step-img"><img src="../img/structure-s.webp" alt="Kolonna va tösinli qavat" loading="lazy"></div>
+        </li>
+        <li class="pstep" data-i="3">
+          <span class="pn">04</span>
+          <h3>Fasad, oynalar va tizimlar</h3>
+          <p>Devorlar suvaladi, oynalar örnatiladi, elektr va kommunikatsiyalar keltiriladi.</p>
+          <div class="step-img"><img src="../img/windows-s.webp" alt="Oynalari örnatilgan va suvalgan xona" loading="lazy"></div>
+        </li>
+        <li class="pstep" data-i="4">
+          <span class="pn">05</span>
+          <h3>Pardozlaş va topşiriş</h3>
+          <p>Hovli va atrof-hudud obodonlaştiriladi, bino tekşiriladi va buyurtmaçiga topşiriladi.</p>
+          <div class="step-img"><img src="../img/court-arch-s.webp" alt="Tayyor içki hovli" loading="lazy"></div>
+        </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="light">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <p class="eyebrow">Portfel</p>
+          <h2>Binolarimiz</h2>
+        </div>
+        <p class="lead">Toşkentdagi portfelimizdan tanlangan binolar.</p>
       </div>
       <div class="grid">
-        <article class="card reveal" data-type="warehouse">
+        <article class="card reveal">
+          <div class="ph"><img src="../img/facade-s.webp" alt="Toşkent, Oltinsoy 8/3 dagi ikki qavatli tijorat binosi" loading="lazy"><span class="badge">Tijorat binosi</span></div>
+          <div class="body">
+            <span class="loc">Olmazor tumani, Toşkent</span>
+            <h3>Oltinsoy 8/3 binosi</h3>
+            <dl class="specs">
+              <div><dt>Maydon</dt><dd>2 000 m² · 9 sotix yer</dd></div>
+              <div><dt>Qavatlar</dt><dd>2 + yertöla</dd></div>
+              <div><dt>Xususiyat</dt><dd>Ötiş arkali hovli</dd></div>
+            </dl>
+          </div>
+        </article>
+        <article class="card reveal">
           <div class="ph"><img src="../img/p3-s.webp" alt="Bektemirdagi 670 m² ombor içi" loading="lazy"><span class="badge">Ombor</span></div>
           <div class="body">
             <span class="loc">Qöyliq, Bektemir tumani</span>
             <h3>Ombor 670 m²</h3>
             <dl class="specs">
-              <div><dt>Maydon</dt><dd>670 m² · 500 uçun tölaysiz</dd></div>
-              <div><dt>Şift</dt><dd class="na">Söröv böyiça</dd></div>
-              <div><dt>Quvvat</dt><dd>350–380 kVt</dd></div>
+              <div><dt>Maydon</dt><dd>670 m²</dd></div>
               <div><dt>Qavatlar</dt><dd>2 · yuk lifti 1,5 t</dd></div>
-              <div><dt>Kiriş</dt><dd>Darvozali zal, avtoturargoh</dd></div>
+              <div><dt>Quvvat</dt><dd>350–380 kVt</dd></div>
             </dl>
-            <div class="foot">
-              <span class="price"><b>60 000 söm</b>1 m² uçun oyiga, QQS bilan</span>
-              <span class="links">
-                <a class="pdf" href="../docs/sklad-670-uz.pdf" data-l target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>Tavsif PDF</a>
-                <a class="more" href="https://bektemir-arenda.netlify.app/uz/sklad-670/" target="_blank" rel="noopener">Batafsil →</a>
-              </span>
-            </div>
           </div>
         </article>
-        <article class="card reveal" data-type="warehouse">
+        <article class="card reveal">
           <div class="ph"><img src="../img/s303-facade-s.webp" alt="Darvoza ustida ayvoni bor 303 m² ombor fasadi" loading="lazy"><span class="badge">Ombor</span></div>
           <div class="body">
             <span class="loc">Qöyliq, Bektemir tumani</span>
             <h3>Ombor 303 m²</h3>
             <dl class="specs">
-              <div><dt>Maydon</dt><dd>303 m² · 28 m² ayvon bilan</dd></div>
+              <div><dt>Maydon</dt><dd>303 m² · ayvon 28 m²</dd></div>
               <div><dt>Şift</dt><dd>4 m</dd></div>
               <div><dt>Quvvat</dt><dd>350–380 kVt</dd></div>
-              <div><dt>Qavatlar</dt><dd>1 · zal 28,1 × 9,1 m</dd></div>
-              <div><dt>Kiriş</dt><dd>Ayvon ostida darvoza, katta hovli</dd></div>
             </dl>
-            <div class="foot">
-              <span class="price"><b>60 000 söm</b>1 m² uçun oyiga, QQS bilan</span>
-              <span class="links">
-                <a class="pdf" href="../docs/sklad-303-uz.pdf" data-l target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>Tavsif PDF</a>
-                <a class="more" href="https://bektemir-arenda.netlify.app/uz/sklad-303/" target="_blank" rel="noopener">Batafsil →</a>
-              </span>
-            </div>
           </div>
         </article>
-        <article class="card reveal" data-type="building">
-          <div class="ph"><img src="../img/facade-s.webp" alt="Oltinsoy 8/3 dagi ikki qavatli tijorat binosi, Toşkent" loading="lazy"><span class="badge">Tijorat binosi</span></div>
+        <article class="card reveal">
+          <div class="ph"><img src="../img/muqimiy-facade-s.webp" alt="Toşkent, Muqimiy köçasidagi ikki qavatli restoran binosi" loading="lazy"><span class="badge">Restoran binosi</span></div>
           <div class="body">
-            <span class="loc">Oltinsoy 8/3, Olmazor tumani</span>
-            <h3>Bino 2 000 m²</h3>
+            <span class="loc">Muqimiy köçasi 3/2, Toşkent</span>
+            <h3>Ikki qavatli bino</h3>
             <dl class="specs">
-              <div><dt>Maydon</dt><dd>2 000 m² · 9 sotix yer</dd></div>
-              <div><dt>Şift</dt><dd>4 m (loyiha böyiça)</dd></div>
-              <div><dt>Quvvat</dt><dd class="na">Söröv böyiça</dd></div>
-              <div><dt>Qavatlar</dt><dd>2 + yertöla</dd></div>
-              <div><dt>Kiriş</dt><dd>Ötiş yöli bor içki hovli</dd></div>
+              <div><dt>Qavatlar</dt><dd>2 · ikkala qavatda zallar</dd></div>
+              <div><dt>Xususiyat</dt><dd>Panoramali oynalar</dd></div>
+              <div><dt>Joylaşuv</dt><dd>Köçaning birinçi qatori</dd></div>
             </dl>
-            <div class="foot">
-              <span class="price"><b>Söröv böyiça</b>birinçi qator, savdo va ofislar</span>
-              <span class="links">
-                <a class="pdf" href="../docs/oltinsoy-8-3-uz.pdf" data-l target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>Tavsif PDF</a>
-                <a class="more" href="https://oltinsoy-8-3.netlify.app/uz/" target="_blank" rel="noopener">Batafsil →</a>
-              </span>
-            </div>
           </div>
         </article>
-        <article class="card reveal" data-type="building">
-          <div class="ph"><img src="../img/muqimiy-facade-s.webp" alt="Muqimiy 3/2 dagi yertölali ikki qavatli bino, Toşkent" loading="lazy"><span class="badge">Tijorat binosi</span></div>
-          <div class="body">
-            <span class="loc">Muqimiy 3/2, Çilonzor tumani</span>
-            <h3>Bino 369 m²</h3>
-            <dl class="specs">
-              <div><dt>Maydon</dt><dd>369 m² · zallar 110 + 70 m²</dd></div>
-              <div><dt>Şift</dt><dd>3,1–3,2 m</dd></div>
-              <div><dt>Quvvat</dt><dd class="na">Söröv böyiça</dd></div>
-              <div><dt>Qavatlar</dt><dd>2 + yertöla</dd></div>
-              <div><dt>Kiriş</dt><dd>Köçadan kiriş, birinçi qator</dd></div>
-            </dl>
-            <div class="foot">
-              <span class="price"><b>3 700 $</b>oyiga, butun bino uçun</span>
-              <span class="links">
-                <a class="pdf" href="../docs/muqimiy-3-2-uz.pdf" data-l target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>Tavsif PDF</a>
-                <a class="more" href="https://rfjnv.github.io/mukimi-3-2/uz/" target="_blank" rel="noopener">Batafsil →</a>
-              </span>
-            </div>
-          </div>
-        </article>
-      </div>
-      <div class="port">
-        <div class="port-head reveal">
-          <p class="eyebrow">Portfel</p>
-          <h3>Ijaraga berilgan binolar</h3>
-          <p class="lead">Binolarimizning bir qismi ijaraçilar bilan töliq band. Ariza qoldiring — joy böşaganda birinçi bölib sizga xabar beramiz.</p>
-        </div>
-        <div class="grid two">
-        <article class="card reveal leased">
-          <div class="ph"><img src="../img/wh2-yard-s.webp" alt="Ikki yuk darvozasi va beton hovlisi bor ombor" loading="lazy"><span class="badge">Ijarada</span></div>
+        <article class="card reveal">
+          <div class="ph"><img src="../img/wh2-yard-s.webp" alt="Ikki yuk darvozasi va beton hovlisi bor ombor" loading="lazy"><span class="badge">Ombor</span></div>
           <div class="body">
             <span class="loc">Toşkent</span>
             <h3>Ofisli ombor</h3>
-            <p class="pdesc">Ikki yuk darvozali zal, beton hovli va ofis xonalari. Ijaraga berilgan.</p>
+            <dl class="specs">
+              <div><dt>Reja</dt><dd>Zal + ofis xonalari</dd></div>
+              <div><dt>Kiriş</dt><dd>2 ta yuk darvozasi</dd></div>
+              <div><dt>Hovli</dt><dd>Beton hovli</dd></div>
+            </dl>
           </div>
         </article>
-        </div>
-      </div>
-      <div class="grid" style="margin-top:24px">
-        <article class="card card-cta reveal" style="grid-column:1/-1">
-          <p class="eyebrow">Mosini topmadingizmi?</p>
-          <h3>Nima kerakligini ayting — topamiz yoki quramiz</h3>
-          <p>Maydon, quvvat, şift balandligi, yuk tuşiriş, joylaşuv. Mos variantlarni, şu jumladan hali e’lon qilinmaganlarini ham yuboramiz.</p>
-          <div><a class="btn btn-light" href="#contact">Talablarni yuboriş</a></div>
+        <article class="card card-cta reveal">
+          <p class="eyebrow">Boşqa obyektlar</p>
+          <h3>Töliq portfolio söröv böyiça</h3>
+          <p>Boşqa binolar va obyekt fotolarini mamnuniyat bilan körsatamiz.</p>
+          <div><a class="btn btn-light" href="#contact">Portfolioni söraş</a></div>
         </article>
       </div>
     </div>
   </section>
 
-  <section id="locations" class="light" style="padding-top:0">
+  <section id="partners">
     <div class="wrap">
       <div class="sec-head reveal">
         <div>
-          <p class="eyebrow">Manzillar</p>
-          <h2>Binolarimiz qayerda</h2>
+          <p class="eyebrow">Hamkorlar uçun</p>
+          <h2>Xalqaro kompaniyalar bilan hamkorlik</h2>
         </div>
-        <p class="lead">Toşkentning uç tumani: janubi-şarqdagi sanoat hududi va şimoli-ğarb hamda janubi-ğarbdagi şahar köçalari.</p>
+        <p class="lead">Biz xorijiy kompaniyalar bilan hamkorlikka tayyormiz. Loyihangiz haqida ayting, birga qanday işlaşni muhokama qilamiz.</p>
       </div>
-      <div class="locs">
-        <article class="locc reveal">
-          <p class="eyebrow">Bektemir tumani</p>
-          <h3>Qöyliq</h3>
-          <ul><li>Ombor 670 m²</li><li>Ombor 303 m²</li></ul>
-          <div class="btns">
-            <a class="btn btn-line" href="https://yandex.uz/maps/?text=%D0%9A%D1%83%D0%B9%D0%BB%D1%8E%D0%BA%2C%20%D0%91%D0%B5%D0%BA%D1%82%D0%B5%D0%BC%D0%B8%D1%80%D1%81%D0%BA%D0%B8%D0%B9%20%D1%80%D0%B0%D0%B9%D0%BE%D0%BD%2C%20%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82" target="_blank" rel="noopener">Yandex Xaritalar</a>
-            <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Kuylyuk%2C+Bektemir+district%2C+Tashkent" target="_blank" rel="noopener">Google Xaritalar</a>
-          </div>
-        </article>
-        <article class="locc reveal">
-          <p class="eyebrow">Olmazor tumani</p>
-          <h3>Oltinsoy 8/3</h3>
-          <ul><li>Tijorat binosi 2 000 m²</li><li>Köçaning birinçi qatori</li></ul>
-          <div class="btns">
-            <a class="btn btn-line" href="https://yandex.uz/maps/10335/tashkent/?ll=69.239921%2C41.356963&amp;mode=routes&amp;rtext=~41.356958%2C69.239171&amp;rtt=mt&amp;ruri=~&amp;z=18" target="_blank" rel="noopener">Yandex Xaritalar</a>
-            <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=41.356958%2C69.239171" target="_blank" rel="noopener">Google Xaritalar</a>
-          </div>
-        </article>
-        <article class="locc reveal">
-          <p class="eyebrow">Çilonzor tumani</p>
-          <h3>Muqimiy 3/2</h3>
-          <ul><li>Tijorat binosi 369 m²</li><li>Köçaning birinçi qatori</li></ul>
-          <div class="btns">
-            <a class="btn btn-line" href="https://yandex.uz/maps/10335/tashkent/?text=Toshkent%2C%20Muqimiy%20ko%27chasi%2C%203%2F2" target="_blank" rel="noopener">Yandex Xaritalar</a>
-            <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Muqimiy+ko%27chasi+3%2F2%2C+Toshkent" target="_blank" rel="noopener">Google Xaritalar</a>
-          </div>
-        </article>
+      <div class="why" style="margin-top:0">
+        <div class="reveal"><h3>Sizning tilingizda</h3><p>Ingliz, rus va özbek tillarida muloqot qilamiz.</p></div>
+        <div class="reveal"><h3>Aniq jarayon</h3><p>Har bir bosqiçni maydondan foto va video bilan hujjatlaştiramiz.</p></div>
+        <div class="reveal"><h3>Turli şakllarga tayyormiz</h3><p>Nima kerakligini ayting — loyihangizga mos hamkorlik şaklini taklif qilamiz.</p></div>
       </div>
-    </div>
-  </section>
-
-  <section id="how">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <div>
-          <p class="eyebrow">Xorijiy kompaniyalar uçun</p>
-          <h2>Birinçi xabardan köçib kiriş gaça</h2>
-        </div>
-        <p class="lead">Boşlaş uçun Toşkentda böliş şart emas: köp işni masofadan qiliş mumkin.</p>
-      </div>
-      <div class="steps reveal">
-        <div class="step"><h3>Vazifani yozing</h3><p>Maydon, faoliyat turi, kerakli quvvat va muddat — forma, Telegram yoki e-mail orqali.</p></div>
-        <div class="step"><h3>Onlayn yoki jonli köriş</h3><p>Foto, video va rejalarni yuboramiz yoki binoni video qönğiroqda körsatamiz.</p></div>
-        <div class="step"><h3>Şartlarni kelişamiz</h3><p>Tuşunarli ijara şartlari va jamoangiz bilan birga tayyorlangan şartnoma.</p></div>
-        <div class="step"><h3>Köçib kiring</h3><p>Kalitlarni oling va birinçi kundan tayyor joyda işni boşlang.</p></div>
-      </div>
-      <div class="why">
-        <div class="reveal"><h3>Mulk egasi, vositaçi emas</h3><p>Binolarni quradigan va boşqaradigan kompaniya bilan töğridan-töğri işlaysiz.</p></div>
-        <div class="reveal"><h3>Işga tayyor</h3><p>Elektr, kommunikatsiyalar, qöriqlaş va fura kiriş yöli — siz kelgunça tayyor.</p></div>
-        <div class="reveal"><h3>Haqiqiy foto va tavsiflar</h3><p>Har bir e’londa — haqiqiy bino, aniq maydonlar va texnik ma’lumotlar.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="light" style="padding-bottom:0">
-    <div class="wrap split">
-      <div class="ph-wrap reveal"><img src="../img/hall.webp" alt="Oltinsoy 8/3 binosi içidagi zal" loading="lazy" data-par=".08"></div>
-      <div class="reveal">
-        <p class="eyebrow">Biznes uçun qurilgan</p>
-        <h2 style="margin:14px 0 20px">Kompaniyalar işiga moslab loyihalangan binolar</h2>
-        <p class="lead">Keng oraliqlar, baland şiftlar, içki hovlilar va ötiş yöli. Furalar, xodimlar va mijozlar haqida birinçi çizmadanoq öylaymiz — bino birinçi kundan işlaşi uçun.</p>
-        <div style="margin-top:32px"><a class="btn btn-dark" href="#spaces">Obyektlarni köriş</a></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="brokers">
-    <div class="wrap brokers">
-      <div class="reveal">
-        <p class="eyebrow">Brokerlar va agentlar uçun</p>
-        <h2 style="margin:14px 0 20px">Mijoz olib kelyapsizmi? Yordam beramiz.</h2>
-        <p class="lead">Har bir obyekt böyiça ingliz, rus va özbek tillaridagi tavsif — mijozga darhol yuboriş mumkin. Foto, video, köriş vaqti va hamkorlik şartlari uçun bizga töğridan-töğri yozing.</p>
-        <div style="margin-top:32px"><a class="btn btn-light" href="https://t.me/Madin909" target="_blank" rel="noopener">Telegram orqali yoziş</a></div>
-      </div>
-      <div class="kit reveal" aria-label="Tavsiflar">
-        <div><b>Ombor 670 m²</b><span><a href="../docs/sklad-670-en.pdf" target="_blank" rel="noopener" hreflang="en">EN</a><a href="../docs/sklad-670-ru.pdf" target="_blank" rel="noopener" hreflang="ru">RU</a><a href="../docs/sklad-670-uz.pdf" target="_blank" rel="noopener" hreflang="uz">UZ</a></span></div>
-        <div><b>Ombor 303 m²</b><span><a href="../docs/sklad-303-en.pdf" target="_blank" rel="noopener" hreflang="en">EN</a><a href="../docs/sklad-303-ru.pdf" target="_blank" rel="noopener" hreflang="ru">RU</a><a href="../docs/sklad-303-uz.pdf" target="_blank" rel="noopener" hreflang="uz">UZ</a></span></div>
-        <div><b>Bino 2 000 m²</b><span><a href="../docs/oltinsoy-8-3-en.pdf" target="_blank" rel="noopener" hreflang="en">EN</a><a href="../docs/oltinsoy-8-3-ru.pdf" target="_blank" rel="noopener" hreflang="ru">RU</a><a href="../docs/oltinsoy-8-3-uz.pdf" target="_blank" rel="noopener" hreflang="uz">UZ</a></span></div>
-        <div><b>Bino 369 m²</b><span><a href="../docs/muqimiy-3-2-en.pdf" target="_blank" rel="noopener" hreflang="en">EN</a><a href="../docs/muqimiy-3-2-ru.pdf" target="_blank" rel="noopener" hreflang="ru">RU</a><a href="../docs/muqimiy-3-2-uz.pdf" target="_blank" rel="noopener" hreflang="uz">UZ</a></span></div>
-      </div>
+      <div class="reveal" style="margin-top:40px"><a class="btn btn-light" href="#contact">Hamkorlikni muhokama qiliş</a></div>
     </div>
   </section>
 
@@ -711,8 +691,8 @@ footer{background:var(--onyx);padding-top:0;overflow:hidden}
     <div class="wrap contact">
       <div class="reveal">
         <p class="eyebrow">Aloqa</p>
-        <h2 style="margin-top:14px">Binongizni muhokama qilaylik</h2>
-        <p class="lead" style="margin-top:18px">Yozing yoki qönğiroq qiling — özbek, rus yoki ingliz tilida. Talablaringizni yuboring, biz variantlarni taklif qilamiz.</p>
+        <h2 style="margin-top:14px">Loyihangizni muhokama qilaylik</h2>
+        <p class="lead" style="margin-top:18px">Yozing yoki qönğiroq qiling — ingliz, rus yoki özbek tilida. Loyihangiz haqida ayting, biz siz bilan boğlanamiz.</p>
         <div class="people">
           <div class="person">
             <div><b>Jahongir</b><a class="tel" href="tel:+998909571114">+998 90 957-11-14</a></div>
@@ -737,18 +717,14 @@ footer{background:var(--onyx);padding-top:0;overflow:hidden}
         <label>Mamlakat<input name="country" autocomplete="country-name"></label>
         <label>Telefon / Telegram<input name="phone" type="tel" autocomplete="tel"></label>
         <label class="full">E-mail<input name="email" type="email" autocomplete="email" required></label>
-        <label>Nima qidiryapsiz
-          <select name="type">
-            <option>Ombor</option><option>Işlab çiqariş</option><option>Ofis</option><option>Oşxona / oziq-ovqat işlab çiqariş</option><option>Butun bino</option><option>Boşqa</option>
-          </select>
-        </label>
-        <label>Maydon, m²<input name="area" inputmode="numeric" placeholder="masalan, 500"></label>
-        <label class="full">Tafsilotlar<textarea name="message" placeholder="Quvvat, şift balandligi, yuk tuşiriş, muddat, joylaşuv…"></textarea></label>
+        <label class="full">Loyihangiz<textarea name="message" placeholder="Loyihangiz haqida ayting: nima qurişni, qayerda va qaçon rejalaştiryapsiz."></textarea></label>
         <div class="full"><button class="btn btn-dark" type="submit">Arizani yuboriş</button></div>
-        <p class="full note">Ariza Telegram'da oçiladi — faqat «Yuboriş» tugmasini bosing. Odatda bir iş kuni içida javob beramiz.</p>
+        <p class="full note">Ariza Telegram’da oçiladi — faqat «Yuboriş» tugmasini bosing. Odatda bir iş kuni içida javob beramiz.</p>
       </form>
     </div>
   </section>
+
+<!--MAIN:END-->
 </main>
 
 <footer>
@@ -776,6 +752,21 @@ footer{background:var(--onyx);padding-top:0;overflow:hidden}
     var url='https://t.me/'+f.getAttribute('data-tg')+'?text='+encodeURIComponent(lines.join('\n'));
     window.open(url,'_blank','noopener');
   });
+})();
+</script>
+
+<script>
+/* Process section: the sticky photo follows the stage that is in the middle of the screen. */
+(function(){
+  var steps=[].slice.call(document.querySelectorAll('.pstep')), figs=[].slice.call(document.querySelectorAll('#pmedia .sm'));
+  if(!steps.length||!('IntersectionObserver' in window)) return;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(!e.isIntersecting) return;
+    var i=+e.target.getAttribute('data-i');
+    steps.forEach(function(s,k){s.classList.toggle('on',k===i)});
+    figs.forEach(function(f,k){f.classList.toggle('on',k===i)});
+  })},{rootMargin:'-42% 0px -42% 0px'});
+  steps.forEach(function(s){io.observe(s)});
 })();
 </script>
 
@@ -956,7 +947,7 @@ addEventListener('DOMContentLoaded',function(){
   var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches, ticking=false;
   function clamp(v){return v<0?0:v>1?1:v}
   function progress(){
-    var hero=document.querySelector('.hero'), fin=document.getElementById('brokers');
+    var hero=document.querySelector('.hero'), fin=document.getElementById('partners');
     var start=hero?hero.offsetHeight*.5:0;
     var end=fin?fin.offsetTop+fin.offsetHeight-innerHeight:document.documentElement.scrollHeight-innerHeight;
     return reduce?1:clamp((scrollY-start)/Math.max(1,end-start));
@@ -1046,7 +1037,7 @@ addEventListener('DOMContentLoaded',function(){
     (function loop(){cx+=(tx-cx)*.18;cy+=(ty-cy)*.18;cur.style.transform='translate3d('+cx.toFixed(1)+'px,'+cy.toFixed(1)+'px,0)';requestAnimationFrame(loop)})();
   }
   // magnetic buttons
-  [].slice.call(document.querySelectorAll('.hero .btn, .nav .btn, .card-cta .btn, #brokers .btn')).forEach(function(b){
+  [].slice.call(document.querySelectorAll('.hero .btn, .nav .btn, .card-cta .btn, #partners .btn')).forEach(function(b){
     b.addEventListener('mousemove',function(e){var r=b.getBoundingClientRect();b.style.transform='translate('+((e.clientX-r.left-r.width/2)*.22).toFixed(1)+'px,'+((e.clientY-r.top-r.height/2)*.32).toFixed(1)+'px)'});
     b.addEventListener('mouseleave',function(){b.style.transform=''});
   });

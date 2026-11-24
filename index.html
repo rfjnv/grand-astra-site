@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Grand Astra — Commercial Real Estate in Tashkent, Uzbekistan</title>
-<meta name="description" content="Grand Astra builds and leases warehouses, offices and commercial buildings in Tashkent to local and international companies.">
-<meta property="og:title" content="Grand Astra — Your operating base in Uzbekistan">
-<meta property="og:description" content="Warehouses, offices and commercial buildings for lease in Tashkent, built for local and international companies.">
+<title>Grand Astra — Construction company in Tashkent, Uzbekistan</title>
+<meta name="description" content="Grand Astra builds warehouses, production sites, offices and commercial buildings in Tashkent and is open to cooperation with international companies.">
+<meta property="og:title" content="Grand Astra — Your construction partner in Uzbekistan">
+<meta property="og:description" content="We build warehouses, production sites, offices and commercial buildings in Tashkent. Open to cooperation with international companies.">
 <meta property="og:image" content="https://rfjnv.github.io/grand-astra-site/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -136,7 +136,7 @@ section{padding:clamp(80px,11vw,140px) 0}
 .sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;margin-bottom:48px}
 .sec-head h2{margin-top:14px;max-width:720px}
 .light{background:var(--ivory);color:var(--onyx)}
-.light .eyebrow{color:#6b6b73}
+.light .eyebrow{color:#5c5c63}
 .light .lead{color:#55555c}
 
 /* directions */
@@ -207,10 +207,9 @@ section{padding:clamp(80px,11vw,140px) 0}
 .kit a{display:grid;place-items:center;min-width:44px;height:36px;padding:0 10px;border-radius:999px;border:1px solid rgba(230,230,234,.2);font-size:12px;font-weight:600;letter-spacing:.06em;color:var(--silver)}
 .kit a:hover{border-color:var(--silver-1);color:var(--white)}
 @media (max-width:860px){.brokers{grid-template-columns:1fr}}
-@media (min-width:900px){#brokers{padding-bottom:clamp(160px,52vh,560px)}}
+
 /* mobile polish */
 @media (max-width:720px){
-  #brokers{padding-bottom:48vh}
   .specs dt,.card .badge,.dir .tag,.eyebrow{font-size:12px}
   .links a{padding:9px 0}
   .person a.tel{display:inline-block;padding:6px 0}
@@ -395,6 +394,53 @@ footer{background:var(--onyx);padding-top:0;overflow:hidden}
   .mq-t,.fmark,.cue::after{animation:none}
   .cur{display:none}
 }
+/* ===== CONSTRUCTION-COMPANY SECTIONS ===== */
+#partners{position:relative}
+@media (min-width:900px){#partners{padding-bottom:clamp(160px,52vh,560px)}}
+@media (max-width:720px){#partners{padding-bottom:48vh}}
+#partners::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(55% 45% at 0% 0%,rgba(176,141,60,.10),transparent 70%)}
+#process{position:relative}
+#process::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(50% 45% at 100% 20%,rgba(176,141,60,.08),transparent 70%)}
+.pgrid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,6vw,88px);align-items:start;margin-top:8px}
+.psteps{list-style:none;grid-column:1;grid-row:1}
+.pmedia{grid-column:2;grid-row:1;position:sticky;top:104px;aspect-ratio:4/3.1;border-radius:6px;overflow:hidden;background:#15151a;border:1px solid rgba(230,230,234,.09)}
+.sm{position:absolute;inset:0;margin:0;opacity:0;transition:opacity .9s ease}
+.sm.on{opacity:1}
+.sm img{width:100%;height:100%;object-fit:cover;transform:scale(1.06);transition:transform 7s ease}
+.sm.on img{transform:scale(1)}
+.pcap{position:absolute;left:0;right:0;bottom:0;margin:0;padding:48px 20px 16px;font-size:12.5px;color:var(--silver);background:linear-gradient(0deg,rgba(14,14,17,.88),transparent);letter-spacing:.02em}
+.bp-wrap{background-color:#15151a;background-image:linear-gradient(rgba(212,175,55,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(212,175,55,.08) 1px,transparent 1px);background-size:24px 24px;display:grid;place-items:center}
+.bp{width:86%;height:auto}
+.bp-o{fill:rgba(212,175,55,.07);stroke:var(--bronze-l);stroke-width:2}
+.bp-i{fill:none;stroke:rgba(199,199,204,.55);stroke-width:1}
+.bp-d{fill:none;stroke:rgba(199,199,204,.4);stroke-width:1}
+.bp-c circle{fill:var(--silver-1)}
+.pstep{padding:46px 0;border-top:1px solid rgba(230,230,234,.12);min-height:44vh;opacity:.34;transition:opacity .5s}
+.pstep.on{opacity:1}
+.pn{font:500 46px/1 var(--serif);color:transparent;-webkit-text-stroke:1px rgba(212,175,55,.8);display:block;margin-bottom:16px}
+.pstep h3{font-size:clamp(28px,3.4vw,40px);color:var(--white);font-weight:500;margin-bottom:12px}
+.pstep p{color:var(--steel);max-width:480px;font-size:17px}
+.step-img{display:none}
+@media (max-width:900px){
+  .pgrid{display:block}
+  .pmedia{display:none}
+  .pstep{opacity:1;min-height:0;padding:36px 0}
+  .step-img{display:block;margin-top:22px;border-radius:6px;overflow:hidden;aspect-ratio:4/3}
+  .step-img img{width:100%;height:100%;object-fit:cover}
+}
+@media (min-width:900px){
+  #partners .sec-head{display:block}
+  #partners .sec-head h2{max-width:600px}
+  #partners .sec-head .lead{max-width:540px;margin-top:22px}
+}
+.card-cta .eyebrow,.light .card-cta .eyebrow{color:var(--steel)}
+/* contrast fixes (WCAG AA) */
+.specs dt,.note,.card .loc{color:#62626a}
+.more{color:#7C5F17}
+.hero .lead,.hero .facts span{color:#C9C9CE}
+.brand small{font-size:10px}
+@media (max-width:440px){.brand small{font-size:9px}}
+@media (max-width:360px){.brand small{font-size:9px}}
 </style>
 <script>try{if(sessionStorage.gaSeen)document.documentElement.className+=' seen';sessionStorage.gaSeen=1}catch(e){}</script>
 </head>
@@ -409,13 +455,15 @@ footer{background:var(--onyx);padding-top:0;overflow:hidden}
       <img src="img/emblem.svg" alt="" width="25" height="38">
       <span><b>Grand Astra</b><small>Commercial Real Estate</small></span>
     </a>
-    <nav class="nav" id="nav">
-      <a href="#spaces">Spaces</a>
-      <a href="#services">Services</a>
-      <a href="#how">How it works</a>
+    <!--NAV:START-->
+<nav class="nav" id="nav">
+      <a href="#projects">Projects</a>
+      <a href="#process">Process</a>
+      <a href="#partners">Partners</a>
       <a href="#contact">Contact</a>
-      <a class="btn btn-light" href="#contact">Request a viewing</a>
+      <a class="btn btn-light" href="#contact">Discuss cooperation</a>
     </nav>
+<!--NAV:END-->
     <span class="lang" role="group" aria-label="Language"><b aria-current="true">EN</b><a href="ru/" hreflang="ru" lang="ru" title="На русском">RU</a><a href="uz/" hreflang="uz" lang="uz" title="Özbek tilida">UZ</a></span>
     <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
   </div>
@@ -423,287 +471,219 @@ footer{background:var(--onyx);padding-top:0;overflow:hidden}
 
 <div id="build-bg" aria-hidden="true"></div>
 <main id="top">
+<!--MAIN:START-->
   <section class="hero">
     <div class="hero-media" id="heroMedia">
       <picture class="slide on">
         <source media="(max-width:720px)" srcset="img/court-arch-s.webp">
-        <img src="img/court-arch.webp" alt="Courtyard of the Grand Astra commercial building at Oltinsoy 8/3, Tashkent" fetchpriority="high">
+        <img src="img/court-arch.webp" alt="Inner courtyard of the Oltinsoy 8/3 building in Tashkent" fetchpriority="high">
       </picture>
+      <div class="slide" data-bg="img/structure.webp" data-bg-s="img/structure-s.webp" aria-hidden="true"></div>
       <div class="slide" data-bg="img/facade.webp" data-bg-s="img/facade-s.webp" aria-hidden="true"></div>
-      <div class="slide" data-bg="img/s303-hall.webp" data-bg-s="img/s303-hall-s.webp" aria-hidden="true"></div>
     </div>
     <span class="cue" aria-hidden="true"></span>
     <div class="hero-dots" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
     <div class="wrap">
-      <p class="eyebrow">Commercial real estate · Tashkent, Uzbekistan</p>
-      <h1>Your operating base in&nbsp;Uzbekistan</h1>
-      <p class="lead">We build and lease warehouses, offices and commercial buildings in Tashkent to local and international companies — ready for you to start operating.</p>
+      <p class="eyebrow">Construction company · Tashkent, Uzbekistan</p>
+      <h1>Your construction partner in Uzbekistan</h1>
+      <p class="lead">Grand Astra builds warehouses, production sites, offices and commercial buildings in Tashkent — and welcomes cooperation with international companies.</p>
       <div class="ctas">
-        <a class="btn btn-light" href="#spaces">View available spaces</a>
-        <a class="btn btn-ghost" href="#contact">Talk to us</a>
+        <a class="btn btn-light" href="#process">See how we build</a>
+        <a class="btn btn-ghost" href="#contact">Discuss cooperation</a>
       </div>
-      <div class="facts">
-        <div><b>303–2,000 m²</b><span>Space sizes available now</span></div>
-        <div><b>350–380 kW</b><span>Power at Bektemir warehouses</span></div>
-        <div><b>2 districts</b><span>Bektemir &amp; Almazar, Tashkent</span></div>
-        <div><b>EN · RU · UZ</b><span>We work in your language</span></div>
-      </div>
+      <div class="facts"><div><b>5</b><span>buildings in our portfolio</span></div><div><b>5 stages</b><span>from project to handover</span></div><div><b>Tashkent</b><span>where we build</span></div><div><b>EN · RU · UZ</b><span>we work in your language</span></div></div>
     </div>
   </section>
 
-  <div class="mq" aria-hidden="true"><div class="mq-t"><span>Warehouses · Offices · Commercial buildings · New construction · </span><span>Warehouses · Offices · Commercial buildings · New construction · </span></div></div>
+  <div class="mq" aria-hidden="true"><div class="mq-t"><span>Warehouses · Production · Offices · Commercial buildings · </span><span>Warehouses · Production · Offices · Commercial buildings · </span></div></div>
 
   <section id="services">
     <div class="wrap">
       <div class="sec-head reveal">
         <div>
-          <p class="eyebrow">What we do</p>
-          <h2>We build. You operate.</h2>
+          <p class="eyebrow">What we build</p>
+          <h2>Buildings for business.</h2>
         </div>
-        <p class="lead">One partner for your premises — from the first drawing of the building to a long-term lease.</p>
+        <p class="lead">Four types of buildings we know well — from the first drawing to the keys.</p>
       </div>
       <div class="dirs">
         <article class="dir property reveal">
-          <span class="tag">Lease</span>
-          <h3>Warehouses, offices &amp; commercial buildings</h3>
-          <p>We own and lease ready-to-use premises in Tashkent for storage, production, food preparation, retail and office teams.</p>
-          <ul>
-            <li>Ready spaces with power, utilities and truck access</li>
-            <li>Long-term leases for local and foreign companies</li>
-            <li>Storage, production, kitchens, retail and offices</li>
-          </ul>
+          <span class="tag">Warehouses</span>
+          <h3>Warehouses and logistics halls</h3>
+          <p>Large open halls with truck access and concrete yards.</p>
+          <ul><li>Open halls without partitions</li><li>Truck gates and loading canopies</li><li>Reserved electrical power</li></ul>
         </article>
-        <article class="dir new reveal">
-          <span class="tag">New construction</span>
-          <h3>New buildings in development</h3>
-          <p>We keep building in Tashkent. Share your requirements early and lease space shaped around the way you work.</p>
-          <ul>
-            <li>Area, ceiling height and power planned in advance</li>
-            <li>Truck access and loading considered from the first drawing</li>
-            <li>Leave a request to hear about new buildings first</li>
-          </ul>
+        <article class="dir property reveal">
+          <span class="tag">Production</span>
+          <h3>Production and food-service buildings</h3>
+          <p>Buildings prepared for equipment, kitchens and workshops.</p>
+          <ul><li>Freight lifts for heavy loads</li><li>Up to 380 kW at our Bektemir buildings</li><li>Layouts that are easy to adapt</li></ul>
+        </article>
+        <article class="dir property reveal">
+          <span class="tag">Offices</span>
+          <h3>Offices</h3>
+          <p>Bright rooms with large windows and flexible layouts.</p>
+          <ul><li>Large windows to the street and courtyard</li><li>Floors that are easy to divide</li><li>Convenient access and parking</li></ul>
+        </article>
+        <article class="dir property reveal">
+          <span class="tag">Commercial</span>
+          <h3>Commercial buildings</h3>
+          <p>Street-front buildings for retail, services and public use.</p>
+          <ul><li>Shopfront windows on the first line</li><li>Inner courtyards with drive-through access</li><li>Two floors plus a basement level</li></ul>
         </article>
       </div>
     </div>
   </section>
 
-  <section id="spaces" class="light">
+  <section id="process">
     <div class="wrap">
       <div class="sec-head reveal">
         <div>
-          <p class="eyebrow">Available spaces</p>
-          <h2>Find your space in Tashkent</h2>
+          <p class="eyebrow">Our process</p>
+          <h2>How we build</h2>
         </div>
-        <div class="filters" role="group" aria-label="Filter spaces">
-          <button class="chip" aria-pressed="true" data-f="all">All</button>
-          <button class="chip" aria-pressed="false" data-f="warehouse">Warehouses</button>
-          <button class="chip" aria-pressed="false" data-f="building">Commercial buildings</button>
+        <p class="lead">Every building goes through the same five stages. We document each one with photos and video from the site.</p>
+      </div>
+      <div class="pgrid">
+        <div class="pmedia" id="pmedia" aria-hidden="true">
+        <figure class="sm bp-wrap on"><svg class="bp" viewBox="0 0 400 300" role="img" aria-label="Project documentation: plan of the building"><path class="bp-o" d="M70 60H330V240H250V130H150V240H70Z"/><path class="bp-i" d="M86 76H314V224H266V114H134V224H86Z"/><path class="bp-d" d="M70 266H330M70 259V273M330 259V273M52 60V240M45 60H59M45 240H59"/><g class="bp-c"><circle cx="86" cy="76" r="3"/><circle cx="150" cy="76" r="3"/><circle cx="214" cy="76" r="3"/><circle cx="278" cy="76" r="3"/><circle cx="314" cy="76" r="3"/><circle cx="86" cy="150" r="3"/><circle cx="86" cy="224" r="3"/><circle cx="314" cy="150" r="3"/><circle cx="314" cy="224" r="3"/><circle cx="134" cy="224" r="3"/><circle cx="266" cy="224" r="3"/></g></svg></figure>
+        <figure class="sm"><img src="img/found.webp" alt="" loading="lazy"></figure>
+        <figure class="sm"><img src="img/structure.webp" alt="" loading="lazy"></figure>
+        <figure class="sm"><img src="img/windows.webp" alt="" loading="lazy"></figure>
+        <figure class="sm"><img src="img/court-arch.webp" alt="" loading="lazy"></figure>
+          <p class="pcap">Photos: Oltinsoy 8/3 building, Tashkent</p>
         </div>
+        <ol class="psteps" id="psteps">
+        <li class="pstep on" data-i="0">
+          <span class="pn">01</span>
+          <h3>Project</h3>
+          <p>The site, project documentation and engineering loads are agreed before any work begins.</p>
+          <div class="step-img bp-wrap"><svg class="bp" viewBox="0 0 400 300" role="img" aria-label="Project documentation: plan of the building"><path class="bp-o" d="M70 60H330V240H250V130H150V240H70Z"/><path class="bp-i" d="M86 76H314V224H266V114H134V224H86Z"/><path class="bp-d" d="M70 266H330M70 259V273M330 259V273M52 60V240M45 60H59M45 240H59"/><g class="bp-c"><circle cx="86" cy="76" r="3"/><circle cx="150" cy="76" r="3"/><circle cx="214" cy="76" r="3"/><circle cx="278" cy="76" r="3"/><circle cx="314" cy="76" r="3"/><circle cx="86" cy="150" r="3"/><circle cx="86" cy="224" r="3"/><circle cx="314" cy="150" r="3"/><circle cx="314" cy="224" r="3"/><circle cx="134" cy="224" r="3"/><circle cx="266" cy="224" r="3"/></g></svg></div>
+        </li>
+        <li class="pstep" data-i="1">
+          <span class="pn">02</span>
+          <h3>Foundation and basement</h3>
+          <p>Excavation, foundation and the basement level: the concrete columns and slabs that carry the whole building.</p>
+          <div class="step-img"><img src="img/found-s.webp" alt="Basement level with concrete columns" loading="lazy"></div>
+        </li>
+        <li class="pstep" data-i="2">
+          <span class="pn">03</span>
+          <h3>Structure and floors</h3>
+          <p>Columns, beams and floor slabs rise level by level until the building takes its full shape.</p>
+          <div class="step-img"><img src="img/structure-s.webp" alt="Floor with columns and beams" loading="lazy"></div>
+        </li>
+        <li class="pstep" data-i="3">
+          <span class="pn">04</span>
+          <h3>Facade, windows and systems</h3>
+          <p>Walls are plastered, windows installed, and power and utilities are brought in.</p>
+          <div class="step-img"><img src="img/windows-s.webp" alt="Room with windows installed and plastered walls" loading="lazy"></div>
+        </li>
+        <li class="pstep" data-i="4">
+          <span class="pn">05</span>
+          <h3>Finishing and handover</h3>
+          <p>The courtyard and surroundings are finished, the building is checked and handed over to the client.</p>
+          <div class="step-img"><img src="img/court-arch-s.webp" alt="Finished inner courtyard" loading="lazy"></div>
+        </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="light">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <p class="eyebrow">Portfolio</p>
+          <h2>Our buildings</h2>
+        </div>
+        <p class="lead">A selection of buildings from our portfolio in Tashkent.</p>
       </div>
       <div class="grid">
-        <article class="card reveal" data-type="warehouse">
+        <article class="card reveal">
+          <div class="ph"><img src="img/facade-s.webp" alt="Two-storey commercial building at Oltinsoy 8/3, Tashkent" loading="lazy"><span class="badge">Commercial building</span></div>
+          <div class="body">
+            <span class="loc">Almazar district, Tashkent</span>
+            <h3>Oltinsoy 8/3 building</h3>
+            <dl class="specs">
+              <div><dt>Area</dt><dd>2,000 m² · plot 9 sotok</dd></div>
+              <div><dt>Floors</dt><dd>2 + basement</dd></div>
+              <div><dt>Feature</dt><dd>Courtyard with drive-through arch</dd></div>
+            </dl>
+          </div>
+        </article>
+        <article class="card reveal">
           <div class="ph"><img src="img/p3-s.webp" alt="Interior of the 670 m² warehouse in Bektemir" loading="lazy"><span class="badge">Warehouse</span></div>
           <div class="body">
             <span class="loc">Kuylyuk, Bektemir district</span>
             <h3>Warehouse 670 m²</h3>
             <dl class="specs">
-              <div><dt>Area</dt><dd>670 m² · pay for 500</dd></div>
-              <div><dt>Ceiling height</dt><dd class="na">On request</dd></div>
-              <div><dt>Power</dt><dd>350–380 kW</dd></div>
+              <div><dt>Area</dt><dd>670 m²</dd></div>
               <div><dt>Floors</dt><dd>2 · freight lift 1.5 t</dd></div>
-              <div><dt>Access</dt><dd>Gated hall, parking</dd></div>
+              <div><dt>Power</dt><dd>350–380 kW</dd></div>
             </dl>
-            <div class="foot">
-              <span class="price"><b>60,000 UZS</b>per m² / month, VAT incl.</span>
-              <span class="links">
-                <a class="pdf" href="docs/sklad-670-en.pdf" data-l target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>Spec sheet PDF</a>
-                <a class="more" href="https://bektemir-arenda.netlify.app/sklad-670/" target="_blank" rel="noopener">Details (RU) →</a>
-              </span>
-            </div>
           </div>
         </article>
-        <article class="card reveal" data-type="warehouse">
+        <article class="card reveal">
           <div class="ph"><img src="img/s303-facade-s.webp" alt="Facade of the 303 m² warehouse with loading canopy" loading="lazy"><span class="badge">Warehouse</span></div>
           <div class="body">
             <span class="loc">Kuylyuk, Bektemir district</span>
             <h3>Warehouse 303 m²</h3>
             <dl class="specs">
-              <div><dt>Area</dt><dd>303 m² · incl. canopy 28 m²</dd></div>
-              <div><dt>Ceiling height</dt><dd>4 m</dd></div>
+              <div><dt>Area</dt><dd>303 m² · canopy 28 m²</dd></div>
+              <div><dt>Ceilings</dt><dd>4 m</dd></div>
               <div><dt>Power</dt><dd>350–380 kW</dd></div>
-              <div><dt>Floors</dt><dd>1 · open hall 28.1 × 9.1 m</dd></div>
-              <div><dt>Access</dt><dd>Gate under canopy, large yard</dd></div>
             </dl>
-            <div class="foot">
-              <span class="price"><b>60,000 UZS</b>per m² / month, VAT incl.</span>
-              <span class="links">
-                <a class="pdf" href="docs/sklad-303-en.pdf" data-l target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>Spec sheet PDF</a>
-                <a class="more" href="https://bektemir-arenda.netlify.app/sklad-303/" target="_blank" rel="noopener">Details (RU) →</a>
-              </span>
-            </div>
           </div>
         </article>
-        <article class="card reveal" data-type="building">
-          <div class="ph"><img src="img/facade-s.webp" alt="Two-storey commercial building at Oltinsoy 8/3, Tashkent" loading="lazy"><span class="badge">Commercial building</span></div>
+        <article class="card reveal">
+          <div class="ph"><img src="img/muqimiy-facade-s.webp" alt="Two-storey restaurant building on Muqimiy street, Tashkent" loading="lazy"><span class="badge">Restaurant building</span></div>
           <div class="body">
-            <span class="loc">Oltinsoy 8/3, Almazar district</span>
-            <h3>Building 2,000 m²</h3>
+            <span class="loc">Muqimiy St 3/2, Tashkent</span>
+            <h3>Two-storey building</h3>
             <dl class="specs">
-              <div><dt>Area</dt><dd>2,000 m² · plot 9 sotok</dd></div>
-              <div><dt>Ceiling height</dt><dd>4 m (design)</dd></div>
-              <div><dt>Power</dt><dd class="na">On request</dd></div>
-              <div><dt>Floors</dt><dd>2 + basement</dd></div>
-              <div><dt>Access</dt><dd>Courtyard with drive-through arch</dd></div>
+              <div><dt>Floors</dt><dd>2 · dining halls</dd></div>
+              <div><dt>Feature</dt><dd>Panoramic windows</dd></div>
+              <div><dt>Position</dt><dd>First line of the street</dd></div>
             </dl>
-            <div class="foot">
-              <span class="price"><b>On request</b>first line, retail &amp; offices</span>
-              <span class="links">
-                <a class="pdf" href="docs/oltinsoy-8-3-en.pdf" data-l target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>Spec sheet PDF</a>
-                <a class="more" href="https://oltinsoy-8-3.netlify.app/" target="_blank" rel="noopener">Details (RU) →</a>
-              </span>
-            </div>
           </div>
         </article>
-        <article class="card reveal" data-type="building">
-          <div class="ph"><img src="img/muqimiy-facade-s.webp" alt="Two-storey building with basement at Muqimiy 3/2, Tashkent" loading="lazy"><span class="badge">Commercial building</span></div>
-          <div class="body">
-            <span class="loc">Muqimiy 3/2, Chilanzar district</span>
-            <h3>Building 369 m²</h3>
-            <dl class="specs">
-              <div><dt>Area</dt><dd>369 m² · halls 110 + 70 m²</dd></div>
-              <div><dt>Ceiling height</dt><dd>3.1–3.2 m</dd></div>
-              <div><dt>Power</dt><dd class="na">On request</dd></div>
-              <div><dt>Floors</dt><dd>2 + basement</dd></div>
-              <div><dt>Access</dt><dd>Street entrance, first line</dd></div>
-            </dl>
-            <div class="foot">
-              <span class="price"><b>$3,700</b>per month, whole building</span>
-              <span class="links">
-                <a class="pdf" href="docs/muqimiy-3-2-en.pdf" data-l target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>Spec sheet PDF</a>
-                <a class="more" href="https://rfjnv.github.io/mukimi-3-2/" target="_blank" rel="noopener">Details (RU) →</a>
-              </span>
-            </div>
-          </div>
-        </article>
-      </div>
-      <div class="port">
-        <div class="port-head reveal">
-          <p class="eyebrow">Portfolio</p>
-          <h3>Buildings already leased</h3>
-          <p class="lead">Part of our portfolio is fully occupied. Leave a request and we’ll tell you first when space becomes available.</p>
-        </div>
-        <div class="grid two">
-        <article class="card reveal leased">
-          <div class="ph"><img src="img/wh2-yard-s.webp" alt="Warehouse with two truck gates and a concrete yard" loading="lazy"><span class="badge">Leased</span></div>
+        <article class="card reveal">
+          <div class="ph"><img src="img/wh2-yard-s.webp" alt="Warehouse with two truck gates and a concrete yard" loading="lazy"><span class="badge">Warehouse</span></div>
           <div class="body">
             <span class="loc">Tashkent</span>
             <h3>Warehouse with offices</h3>
-            <p class="pdesc">Open hall with two truck gates, a concrete yard and office rooms. Leased.</p>
+            <dl class="specs">
+              <div><dt>Layout</dt><dd>Open hall + office rooms</dd></div>
+              <div><dt>Access</dt><dd>2 truck gates</dd></div>
+              <div><dt>Yard</dt><dd>Concrete yard</dd></div>
+            </dl>
           </div>
         </article>
-        </div>
-      </div>
-      <div class="grid" style="margin-top:24px">
-        <article class="card card-cta reveal" style="grid-column:1/-1">
-          <p class="eyebrow">Not the right fit?</p>
-          <h3>Tell us what you need — we’ll find or build it</h3>
-          <p>Area, power, ceiling height, loading, location. We’ll reply with matching options, including spaces not yet listed.</p>
-          <div><a class="btn btn-light" href="#contact">Send your requirements</a></div>
+        <article class="card card-cta reveal">
+          <p class="eyebrow">More projects</p>
+          <h3>Full portfolio on request</h3>
+          <p>We will gladly show more buildings and project photos.</p>
+          <div><a class="btn btn-light" href="#contact">Request the portfolio</a></div>
         </article>
       </div>
     </div>
   </section>
 
-  <section id="locations" class="light" style="padding-top:0">
+  <section id="partners">
     <div class="wrap">
       <div class="sec-head reveal">
         <div>
-          <p class="eyebrow">Locations</p>
-          <h2>Where our buildings are</h2>
+          <p class="eyebrow">Partners</p>
+          <h2>Cooperation with international companies</h2>
         </div>
-        <p class="lead">Three districts of Tashkent: an industrial area in the south-east and city streets in the north-west and south-west.</p>
+        <p class="lead">We are open to partnership with foreign companies. Tell us about your project and we will discuss how to work together.</p>
       </div>
-      <div class="locs">
-        <article class="locc reveal">
-          <p class="eyebrow">Bektemir district</p>
-          <h3>Kuylyuk</h3>
-          <ul><li>Warehouse 670 m²</li><li>Warehouse 303 m²</li></ul>
-          <div class="btns">
-            <a class="btn btn-line" href="https://yandex.uz/maps/?text=%D0%9A%D1%83%D0%B9%D0%BB%D1%8E%D0%BA%2C%20%D0%91%D0%B5%D0%BA%D1%82%D0%B5%D0%BC%D0%B8%D1%80%D1%81%D0%BA%D0%B8%D0%B9%20%D1%80%D0%B0%D0%B9%D0%BE%D0%BD%2C%20%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82" target="_blank" rel="noopener">Yandex Maps</a>
-            <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Kuylyuk%2C+Bektemir+district%2C+Tashkent" target="_blank" rel="noopener">Google Maps</a>
-          </div>
-        </article>
-        <article class="locc reveal">
-          <p class="eyebrow">Almazar district</p>
-          <h3>Oltinsoy 8/3</h3>
-          <ul><li>Commercial building 2,000 m²</li><li>First line of the street</li></ul>
-          <div class="btns">
-            <a class="btn btn-line" href="https://yandex.uz/maps/10335/tashkent/?ll=69.239921%2C41.356963&amp;mode=routes&amp;rtext=~41.356958%2C69.239171&amp;rtt=mt&amp;ruri=~&amp;z=18" target="_blank" rel="noopener">Yandex Maps</a>
-            <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=41.356958%2C69.239171" target="_blank" rel="noopener">Google Maps</a>
-          </div>
-        </article>
-        <article class="locc reveal">
-          <p class="eyebrow">Chilanzar district</p>
-          <h3>Muqimiy 3/2</h3>
-          <ul><li>Commercial building 369 m²</li><li>First line of the street</li></ul>
-          <div class="btns">
-            <a class="btn btn-line" href="https://yandex.uz/maps/10335/tashkent/?text=Toshkent%2C%20Muqimiy%20ko%27chasi%2C%203%2F2" target="_blank" rel="noopener">Yandex Maps</a>
-            <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Muqimiy+ko%27chasi+3%2F2%2C+Toshkent" target="_blank" rel="noopener">Google Maps</a>
-          </div>
-        </article>
+      <div class="why" style="margin-top:0">
+        <div class="reveal"><h3>Your language</h3><p>We communicate in English, Russian and Uzbek.</p></div>
+        <div class="reveal"><h3>Documented progress</h3><p>We document every stage with photos and video from the site.</p></div>
+        <div class="reveal"><h3>Open to formats</h3><p>Tell us what you need. We will propose a way to cooperate that fits your project.</p></div>
       </div>
-    </div>
-  </section>
-
-  <section id="how">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <div>
-          <p class="eyebrow">For international companies</p>
-          <h2>From first message to move-in</h2>
-        </div>
-        <p class="lead">You don’t need to be in Tashkent to start. Most of the process works remotely.</p>
-      </div>
-      <div class="steps reveal">
-        <div class="step"><h3>Share your brief</h3><p>Area, type of operation, power needs and timeline — by form, Telegram or e-mail.</p></div>
-        <div class="step"><h3>Remote or live tour</h3><p>We send photos, videos and floor plans, or walk you through the space on a video call.</p></div>
-        <div class="step"><h3>Agree the terms</h3><p>Clear lease terms and a contract prepared together with your team.</p></div>
-        <div class="step"><h3>Move in</h3><p>Get the keys and start operating in a space that is ready from day one.</p></div>
-      </div>
-      <div class="why">
-        <div class="reveal"><h3>Owner, not a broker</h3><p>You deal directly with the company that builds and manages the property.</p></div>
-        <div class="reveal"><h3>Ready to operate</h3><p>Power, utilities, security and truck access are in place before you arrive.</p></div>
-        <div class="reveal"><h3>Real photos, real specs</h3><p>Every listing shows the actual building, measured areas and technical data.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="light" style="padding-bottom:0">
-    <div class="wrap split">
-      <div class="ph-wrap reveal"><img src="img/hall.webp" alt="Interior hall of the Oltinsoy 8/3 building" loading="lazy" data-par=".08"></div>
-      <div class="reveal">
-        <p class="eyebrow">Built for business</p>
-        <h2 style="margin:14px 0 20px">Buildings designed for the way companies work</h2>
-        <p class="lead">Wide spans, high ceilings, inner courtyards and drive-through access. We think about trucks, staff and customers from the first drawing — so the space works from day one.</p>
-        <div style="margin-top:32px"><a class="btn btn-dark" href="#spaces">See the spaces</a></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="brokers">
-    <div class="wrap brokers">
-      <div class="reveal">
-        <p class="eyebrow">For brokers &amp; agents</p>
-        <h2 style="margin:14px 0 20px">Bringing a client? We’ll make it easy.</h2>
-        <p class="lead">Spec sheets for every space in English, Russian and Uzbek — ready to forward. For photos, videos, viewing times and terms of cooperation, message us directly.</p>
-        <div style="margin-top:32px"><a class="btn btn-light" href="https://t.me/Madin909" target="_blank" rel="noopener">Message us on Telegram</a></div>
-      </div>
-      <div class="kit reveal" aria-label="Spec sheets">
-        <div><b>Warehouse 670 m²</b><span><a href="docs/sklad-670-en.pdf" target="_blank" rel="noopener" hreflang="en">EN</a><a href="docs/sklad-670-ru.pdf" target="_blank" rel="noopener" hreflang="ru">RU</a><a href="docs/sklad-670-uz.pdf" target="_blank" rel="noopener" hreflang="uz">UZ</a></span></div>
-        <div><b>Warehouse 303 m²</b><span><a href="docs/sklad-303-en.pdf" target="_blank" rel="noopener" hreflang="en">EN</a><a href="docs/sklad-303-ru.pdf" target="_blank" rel="noopener" hreflang="ru">RU</a><a href="docs/sklad-303-uz.pdf" target="_blank" rel="noopener" hreflang="uz">UZ</a></span></div>
-        <div><b>Building 2,000 m²</b><span><a href="docs/oltinsoy-8-3-en.pdf" target="_blank" rel="noopener" hreflang="en">EN</a><a href="docs/oltinsoy-8-3-ru.pdf" target="_blank" rel="noopener" hreflang="ru">RU</a><a href="docs/oltinsoy-8-3-uz.pdf" target="_blank" rel="noopener" hreflang="uz">UZ</a></span></div>
-        <div><b>Building 369 m²</b><span><a href="docs/muqimiy-3-2-en.pdf" target="_blank" rel="noopener" hreflang="en">EN</a><a href="docs/muqimiy-3-2-ru.pdf" target="_blank" rel="noopener" hreflang="ru">RU</a><a href="docs/muqimiy-3-2-uz.pdf" target="_blank" rel="noopener" hreflang="uz">UZ</a></span></div>
-      </div>
+      <div class="reveal" style="margin-top:40px"><a class="btn btn-light" href="#contact">Discuss cooperation</a></div>
     </div>
   </section>
 
@@ -711,8 +691,8 @@ footer{background:var(--onyx);padding-top:0;overflow:hidden}
     <div class="wrap contact">
       <div class="reveal">
         <p class="eyebrow">Contact</p>
-        <h2 style="margin-top:14px">Let’s talk about your space</h2>
-        <p class="lead" style="margin-top:18px">Write or call — in English, Russian or Uzbek. Send your requirements and we’ll come back with options.</p>
+        <h2 style="margin-top:14px">Let’s talk about your project</h2>
+        <p class="lead" style="margin-top:18px">Write or call — in English, Russian or Uzbek. Tell us about your project and we will get back to you.</p>
         <div class="people">
           <div class="person">
             <div><b>Jahongir</b><a class="tel" href="tel:+998909571114">+998 90 957-11-14</a></div>
@@ -737,18 +717,14 @@ footer{background:var(--onyx);padding-top:0;overflow:hidden}
         <label>Country<input name="country" autocomplete="country-name"></label>
         <label>Phone / Telegram<input name="phone" type="tel" autocomplete="tel"></label>
         <label class="full">E-mail<input name="email" type="email" autocomplete="email" required></label>
-        <label>I’m looking for
-          <select name="type">
-            <option>Warehouse</option><option>Production space</option><option>Office</option><option>Kitchen / food production</option><option>Whole building</option><option>Other</option>
-          </select>
-        </label>
-        <label>Area, m²<input name="area" inputmode="numeric" placeholder="e.g. 500"></label>
-        <label class="full">Details<textarea name="message" placeholder="Power, ceiling height, loading, timeline, location…"></textarea></label>
+        <label class="full">Your project<textarea name="message" placeholder="Tell us about your project: what you plan to build, where and when."></textarea></label>
         <div class="full"><button class="btn btn-dark" type="submit">Send request</button></div>
         <p class="full note">Your request opens in Telegram, ready to send. We usually reply within one business day.</p>
       </form>
     </div>
   </section>
+
+<!--MAIN:END-->
 </main>
 
 <footer>
@@ -776,6 +752,21 @@ footer{background:var(--onyx);padding-top:0;overflow:hidden}
     var url='https://t.me/'+f.getAttribute('data-tg')+'?text='+encodeURIComponent(lines.join('\n'));
     window.open(url,'_blank','noopener');
   });
+})();
+</script>
+
+<script>
+/* Process section: the sticky photo follows the stage that is in the middle of the screen. */
+(function(){
+  var steps=[].slice.call(document.querySelectorAll('.pstep')), figs=[].slice.call(document.querySelectorAll('#pmedia .sm'));
+  if(!steps.length||!('IntersectionObserver' in window)) return;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(!e.isIntersecting) return;
+    var i=+e.target.getAttribute('data-i');
+    steps.forEach(function(s,k){s.classList.toggle('on',k===i)});
+    figs.forEach(function(f,k){f.classList.toggle('on',k===i)});
+  })},{rootMargin:'-42% 0px -42% 0px'});
+  steps.forEach(function(s){io.observe(s)});
 })();
 </script>
 
@@ -956,7 +947,7 @@ addEventListener('DOMContentLoaded',function(){
   var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches, ticking=false;
   function clamp(v){return v<0?0:v>1?1:v}
   function progress(){
-    var hero=document.querySelector('.hero'), fin=document.getElementById('brokers');
+    var hero=document.querySelector('.hero'), fin=document.getElementById('partners');
     var start=hero?hero.offsetHeight*.5:0;
     var end=fin?fin.offsetTop+fin.offsetHeight-innerHeight:document.documentElement.scrollHeight-innerHeight;
     return reduce?1:clamp((scrollY-start)/Math.max(1,end-start));
@@ -1046,7 +1037,7 @@ addEventListener('DOMContentLoaded',function(){
     (function loop(){cx+=(tx-cx)*.18;cy+=(ty-cy)*.18;cur.style.transform='translate3d('+cx.toFixed(1)+'px,'+cy.toFixed(1)+'px,0)';requestAnimationFrame(loop)})();
   }
   // magnetic buttons
-  [].slice.call(document.querySelectorAll('.hero .btn, .nav .btn, .card-cta .btn, #brokers .btn')).forEach(function(b){
+  [].slice.call(document.querySelectorAll('.hero .btn, .nav .btn, .card-cta .btn, #partners .btn')).forEach(function(b){
     b.addEventListener('mousemove',function(e){var r=b.getBoundingClientRect();b.style.transform='translate('+((e.clientX-r.left-r.width/2)*.22).toFixed(1)+'px,'+((e.clientY-r.top-r.height/2)*.32).toFixed(1)+'px)'});
     b.addEventListener('mouseleave',function(){b.style.transform=''});
   });

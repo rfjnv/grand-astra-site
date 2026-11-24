@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Grand Astra — коммерческая недвижимость в Ташкенте</title>
-<meta name="description" content="Grand Astra строит и сдаёт в аренду склады, офисы и коммерческие здания в Ташкенте местным и иностранным компаниям.">
-<meta property="og:title" content="Grand Astra — ваша рабочая база в Узбекистане">
-<meta property="og:description" content="Склады, офисы и коммерческие здания в аренду в Ташкенте — для местных и иностранных компаний.">
+<title>Grand Astra — строительная компания в Ташкенте</title>
+<meta name="description" content="Grand Astra строит склады, производственные объекты, офисы и коммерческие здания в Ташкенте и открыта к сотрудничеству с международными компаниями.">
+<meta property="og:title" content="Grand Astra — ваш строительный партнёр в Узбекистане">
+<meta property="og:description" content="Строим склады, производственные объекты, офисы и коммерческие здания в Ташкенте. Открыты к сотрудничеству с международными компаниями.">
 <meta property="og:image" content="https://rfjnv.github.io/grand-astra-site/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -136,7 +136,7 @@ section{padding:clamp(80px,11vw,140px) 0}
 .sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;margin-bottom:48px}
 .sec-head h2{margin-top:14px;max-width:720px}
 .light{background:var(--ivory);color:var(--onyx)}
-.light .eyebrow{color:#6b6b73}
+.light .eyebrow{color:#5c5c63}
 .light .lead{color:#55555c}
 
 /* directions */
@@ -207,10 +207,9 @@ section{padding:clamp(80px,11vw,140px) 0}
 .kit a{display:grid;place-items:center;min-width:44px;height:36px;padding:0 10px;border-radius:999px;border:1px solid rgba(230,230,234,.2);font-size:12px;font-weight:600;letter-spacing:.06em;color:var(--silver)}
 .kit a:hover{border-color:var(--silver-1);color:var(--white)}
 @media (max-width:860px){.brokers{grid-template-columns:1fr}}
-@media (min-width:900px){#brokers{padding-bottom:clamp(160px,52vh,560px)}}
+
 /* mobile polish */
 @media (max-width:720px){
-  #brokers{padding-bottom:48vh}
   .specs dt,.card .badge,.dir .tag,.eyebrow{font-size:12px}
   .links a{padding:9px 0}
   .person a.tel{display:inline-block;padding:6px 0}
@@ -395,6 +394,53 @@ footer{background:var(--onyx);padding-top:0;overflow:hidden}
   .mq-t,.fmark,.cue::after{animation:none}
   .cur{display:none}
 }
+/* ===== CONSTRUCTION-COMPANY SECTIONS ===== */
+#partners{position:relative}
+@media (min-width:900px){#partners{padding-bottom:clamp(160px,52vh,560px)}}
+@media (max-width:720px){#partners{padding-bottom:48vh}}
+#partners::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(55% 45% at 0% 0%,rgba(176,141,60,.10),transparent 70%)}
+#process{position:relative}
+#process::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(50% 45% at 100% 20%,rgba(176,141,60,.08),transparent 70%)}
+.pgrid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,6vw,88px);align-items:start;margin-top:8px}
+.psteps{list-style:none;grid-column:1;grid-row:1}
+.pmedia{grid-column:2;grid-row:1;position:sticky;top:104px;aspect-ratio:4/3.1;border-radius:6px;overflow:hidden;background:#15151a;border:1px solid rgba(230,230,234,.09)}
+.sm{position:absolute;inset:0;margin:0;opacity:0;transition:opacity .9s ease}
+.sm.on{opacity:1}
+.sm img{width:100%;height:100%;object-fit:cover;transform:scale(1.06);transition:transform 7s ease}
+.sm.on img{transform:scale(1)}
+.pcap{position:absolute;left:0;right:0;bottom:0;margin:0;padding:48px 20px 16px;font-size:12.5px;color:var(--silver);background:linear-gradient(0deg,rgba(14,14,17,.88),transparent);letter-spacing:.02em}
+.bp-wrap{background-color:#15151a;background-image:linear-gradient(rgba(212,175,55,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(212,175,55,.08) 1px,transparent 1px);background-size:24px 24px;display:grid;place-items:center}
+.bp{width:86%;height:auto}
+.bp-o{fill:rgba(212,175,55,.07);stroke:var(--bronze-l);stroke-width:2}
+.bp-i{fill:none;stroke:rgba(199,199,204,.55);stroke-width:1}
+.bp-d{fill:none;stroke:rgba(199,199,204,.4);stroke-width:1}
+.bp-c circle{fill:var(--silver-1)}
+.pstep{padding:46px 0;border-top:1px solid rgba(230,230,234,.12);min-height:44vh;opacity:.34;transition:opacity .5s}
+.pstep.on{opacity:1}
+.pn{font:500 46px/1 var(--serif);color:transparent;-webkit-text-stroke:1px rgba(212,175,55,.8);display:block;margin-bottom:16px}
+.pstep h3{font-size:clamp(28px,3.4vw,40px);color:var(--white);font-weight:500;margin-bottom:12px}
+.pstep p{color:var(--steel);max-width:480px;font-size:17px}
+.step-img{display:none}
+@media (max-width:900px){
+  .pgrid{display:block}
+  .pmedia{display:none}
+  .pstep{opacity:1;min-height:0;padding:36px 0}
+  .step-img{display:block;margin-top:22px;border-radius:6px;overflow:hidden;aspect-ratio:4/3}
+  .step-img img{width:100%;height:100%;object-fit:cover}
+}
+@media (min-width:900px){
+  #partners .sec-head{display:block}
+  #partners .sec-head h2{max-width:600px}
+  #partners .sec-head .lead{max-width:540px;margin-top:22px}
+}
+.card-cta .eyebrow,.light .card-cta .eyebrow{color:var(--steel)}
+/* contrast fixes (WCAG AA) */
+.specs dt,.note,.card .loc{color:#62626a}
+.more{color:#7C5F17}
+.hero .lead,.hero .facts span{color:#C9C9CE}
+.brand small{font-size:10px}
+@media (max-width:440px){.brand small{font-size:9px}}
+@media (max-width:360px){.brand small{font-size:9px}}
 </style>
 <script>try{if(sessionStorage.gaSeen)document.documentElement.className+=' seen';sessionStorage.gaSeen=1}catch(e){}</script>
 </head>
@@ -409,13 +455,15 @@ footer{background:var(--onyx);padding-top:0;overflow:hidden}
       <img src="../img/emblem.svg" alt="" width="25" height="38">
       <span><b>Grand Astra</b><small>Commercial Real Estate</small></span>
     </a>
-    <nav class="nav" id="nav">
-      <a href="#spaces">Объекты</a>
-      <a href="#services">Услуги</a>
-      <a href="#how">Как мы работаем</a>
+    <!--NAV:START-->
+<nav class="nav" id="nav">
+      <a href="#projects">Объекты</a>
+      <a href="#process">Процесс</a>
+      <a href="#partners">Партнёрам</a>
       <a href="#contact">Контакты</a>
-      <a class="btn btn-light" href="#contact">Записаться на просмотр</a>
+      <a class="btn btn-light" href="#contact">Обсудить сотрудничество</a>
     </nav>
+<!--NAV:END-->
     <span class="lang" role="group" aria-label="Язык"><a href="../" hreflang="en" lang="en" title="In English">EN</a><b aria-current="true">RU</b><a href="../uz/" hreflang="uz" lang="uz" title="Özbek tilida">UZ</a></span>
     <button class="menu-btn" id="menuBtn" aria-label="Меню" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
   </div>
@@ -423,287 +471,219 @@ footer{background:var(--onyx);padding-top:0;overflow:hidden}
 
 <div id="build-bg" aria-hidden="true"></div>
 <main id="top">
+<!--MAIN:START-->
   <section class="hero">
     <div class="hero-media" id="heroMedia">
       <picture class="slide on">
         <source media="(max-width:720px)" srcset="../img/court-arch-s.webp">
-        <img src="../img/court-arch.webp" alt="Внутренний двор коммерческого здания Grand Astra на Олтинсой 8/3, Ташкент" fetchpriority="high">
+        <img src="../img/court-arch.webp" alt="Внутренний двор здания на Олтинсой 8/3 в Ташкенте" fetchpriority="high">
       </picture>
+      <div class="slide" data-bg="../img/structure.webp" data-bg-s="../img/structure-s.webp" aria-hidden="true"></div>
       <div class="slide" data-bg="../img/facade.webp" data-bg-s="../img/facade-s.webp" aria-hidden="true"></div>
-      <div class="slide" data-bg="../img/s303-hall.webp" data-bg-s="../img/s303-hall-s.webp" aria-hidden="true"></div>
     </div>
     <span class="cue" aria-hidden="true"></span>
     <div class="hero-dots" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
     <div class="wrap">
-      <p class="eyebrow">Коммерческая недвижимость · Ташкент, Узбекистан</p>
-      <h1>Ваша рабочая база в&nbsp;Узбекистане</h1>
-      <p class="lead">Строим и сдаём в аренду склады, офисы и коммерческие здания в Ташкенте местным и иностранным компаниям — готовые к работе.</p>
+      <p class="eyebrow">Строительная компания · Ташкент, Узбекистан</p>
+      <h1>Ваш строительный партнёр в Узбекистане</h1>
+      <p class="lead">Grand Astra строит склады, производственные объекты, офисы и коммерческие здания в Ташкенте и открыта к сотрудничеству с международными компаниями.</p>
       <div class="ctas">
-        <a class="btn btn-light" href="#spaces">Смотреть объекты</a>
-        <a class="btn btn-ghost" href="#contact">Связаться с нами</a>
+        <a class="btn btn-light" href="#process">Посмотреть, как мы строим</a>
+        <a class="btn btn-ghost" href="#contact">Обсудить сотрудничество</a>
       </div>
-      <div class="facts">
-        <div><b>303–2 000 м²</b><span>площади, доступные сейчас</span></div>
-        <div><b>350–380 кВт</b><span>мощность на складах в Бектемире</span></div>
-        <div><b>2 района</b><span>Бектемир и Алмазар, Ташкент</span></div>
-        <div><b>EN · RU · UZ</b><span>говорим на вашем языке</span></div>
-      </div>
+      <div class="facts"><div><b>5</b><span>зданий в нашем портфеле</span></div><div><b>5 этапов</b><span>от проекта до сдачи</span></div><div><b>Ташкент</b><span>где мы строим</span></div><div><b>EN · RU · UZ</b><span>говорим на вашем языке</span></div></div>
     </div>
   </section>
 
-  <div class="mq" aria-hidden="true"><div class="mq-t"><span>Склады · Офисы · Коммерческие здания · Новое строительство · </span><span>Склады · Офисы · Коммерческие здания · Новое строительство · </span></div></div>
+  <div class="mq" aria-hidden="true"><div class="mq-t"><span>Склады · Производство · Офисы · Коммерческие здания · </span><span>Склады · Производство · Офисы · Коммерческие здания · </span></div></div>
 
   <section id="services">
     <div class="wrap">
       <div class="sec-head reveal">
         <div>
-          <p class="eyebrow">Чем мы занимаемся</p>
-          <h2>Мы строим. Вы работаете.</h2>
+          <p class="eyebrow">Что мы строим</p>
+          <h2>Здания для бизнеса.</h2>
         </div>
-        <p class="lead">Один партнёр по помещениям — от первого чертежа здания до долгосрочной аренды.</p>
+        <p class="lead">Четыре типа зданий, которые мы знаем досконально, — от первого чертежа до ключей.</p>
       </div>
       <div class="dirs">
         <article class="dir property reveal">
-          <span class="tag">Аренда</span>
-          <h3>Склады, офисы и коммерческие здания</h3>
-          <p>Сдаём в аренду собственные готовые помещения в Ташкенте: под хранение, производство, кухни, торговлю и офисы.</p>
-          <ul>
-            <li>Готовые помещения с электричеством, коммуникациями и подъездом для фур</li>
-            <li>Долгосрочная аренда для местных и иностранных компаний</li>
-            <li>Хранение, производство, кухни, торговля и офисы</li>
-          </ul>
+          <span class="tag">Склады</span>
+          <h3>Склады и логистические залы</h3>
+          <p>Большие открытые залы с подъездом для фур и бетонными дворами.</p>
+          <ul><li>Открытые залы без перегородок</li><li>Грузовые ворота и навесы для разгрузки</li><li>Выделенная электрическая мощность</li></ul>
         </article>
-        <article class="dir new reveal">
-          <span class="tag">Строительство</span>
-          <h3>Новые здания в работе</h3>
-          <p>Мы продолжаем строить в Ташкенте. Расскажите о своих требованиях заранее — и арендуйте помещение, сделанное под вашу работу.</p>
-          <ul>
-            <li>Площадь, высота потолков и мощность — продуманы заранее</li>
-            <li>Подъезд для фур и разгрузка — с первого чертежа</li>
-            <li>Оставьте заявку, чтобы первыми узнать о новых зданиях</li>
-          </ul>
+        <article class="dir property reveal">
+          <span class="tag">Производство</span>
+          <h3>Производственные здания и кухни</h3>
+          <p>Здания, подготовленные под оборудование, кухни и цеха.</p>
+          <ul><li>Грузовые лифты для тяжёлых грузов</li><li>До 380 кВт в наших зданиях в Бектемире</li><li>Планировки, которые легко адаптировать</li></ul>
+        </article>
+        <article class="dir property reveal">
+          <span class="tag">Офисы</span>
+          <h3>Офисы</h3>
+          <p>Светлые помещения с большими окнами и гибкой планировкой.</p>
+          <ul><li>Большие окна на улицу и во двор</li><li>Этажи, которые легко разделить</li><li>Удобный подъезд и парковка</li></ul>
+        </article>
+        <article class="dir property reveal">
+          <span class="tag">Коммерческие</span>
+          <h3>Коммерческие здания</h3>
+          <p>Здания на первой линии для торговли, сервисов и общественного использования.</p>
+          <ul><li>Витринные окна на первой линии</li><li>Внутренние дворы со сквозным проездом</li><li>Два этажа и подвальный уровень</li></ul>
         </article>
       </div>
     </div>
   </section>
 
-  <section id="spaces" class="light">
+  <section id="process">
     <div class="wrap">
       <div class="sec-head reveal">
         <div>
-          <p class="eyebrow">Свободные объекты</p>
-          <h2>Найдите помещение в Ташкенте</h2>
+          <p class="eyebrow">Наш процесс</p>
+          <h2>Как мы строим</h2>
         </div>
-        <div class="filters" role="group" aria-label="Фильтр объектов">
-          <button class="chip" aria-pressed="true" data-f="all">Все</button>
-          <button class="chip" aria-pressed="false" data-f="warehouse">Склады</button>
-          <button class="chip" aria-pressed="false" data-f="building">Коммерческие здания</button>
+        <p class="lead">Каждое здание проходит одни и те же пять этапов. Мы документируем каждый из них фото и видео с площадки.</p>
+      </div>
+      <div class="pgrid">
+        <div class="pmedia" id="pmedia" aria-hidden="true">
+        <figure class="sm bp-wrap on"><svg class="bp" viewBox="0 0 400 300" role="img" aria-label="Проектная документация: план здания"><path class="bp-o" d="M70 60H330V240H250V130H150V240H70Z"/><path class="bp-i" d="M86 76H314V224H266V114H134V224H86Z"/><path class="bp-d" d="M70 266H330M70 259V273M330 259V273M52 60V240M45 60H59M45 240H59"/><g class="bp-c"><circle cx="86" cy="76" r="3"/><circle cx="150" cy="76" r="3"/><circle cx="214" cy="76" r="3"/><circle cx="278" cy="76" r="3"/><circle cx="314" cy="76" r="3"/><circle cx="86" cy="150" r="3"/><circle cx="86" cy="224" r="3"/><circle cx="314" cy="150" r="3"/><circle cx="314" cy="224" r="3"/><circle cx="134" cy="224" r="3"/><circle cx="266" cy="224" r="3"/></g></svg></figure>
+        <figure class="sm"><img src="../img/found.webp" alt="" loading="lazy"></figure>
+        <figure class="sm"><img src="../img/structure.webp" alt="" loading="lazy"></figure>
+        <figure class="sm"><img src="../img/windows.webp" alt="" loading="lazy"></figure>
+        <figure class="sm"><img src="../img/court-arch.webp" alt="" loading="lazy"></figure>
+          <p class="pcap">Фото: здание на Олтинсой 8/3, Ташкент</p>
         </div>
+        <ol class="psteps" id="psteps">
+        <li class="pstep on" data-i="0">
+          <span class="pn">01</span>
+          <h3>Проект</h3>
+          <p>Участок, проектная документация и инженерные нагрузки согласуются до начала работ.</p>
+          <div class="step-img bp-wrap"><svg class="bp" viewBox="0 0 400 300" role="img" aria-label="Проектная документация: план здания"><path class="bp-o" d="M70 60H330V240H250V130H150V240H70Z"/><path class="bp-i" d="M86 76H314V224H266V114H134V224H86Z"/><path class="bp-d" d="M70 266H330M70 259V273M330 259V273M52 60V240M45 60H59M45 240H59"/><g class="bp-c"><circle cx="86" cy="76" r="3"/><circle cx="150" cy="76" r="3"/><circle cx="214" cy="76" r="3"/><circle cx="278" cy="76" r="3"/><circle cx="314" cy="76" r="3"/><circle cx="86" cy="150" r="3"/><circle cx="86" cy="224" r="3"/><circle cx="314" cy="150" r="3"/><circle cx="314" cy="224" r="3"/><circle cx="134" cy="224" r="3"/><circle cx="266" cy="224" r="3"/></g></svg></div>
+        </li>
+        <li class="pstep" data-i="1">
+          <span class="pn">02</span>
+          <h3>Фундамент и подвал</h3>
+          <p>Котлован, фундамент и подвальный уровень: бетонные колонны и перекрытия, на которых стоит всё здание.</p>
+          <div class="step-img"><img src="../img/found-s.webp" alt="Подвальный уровень с бетонными колоннами" loading="lazy"></div>
+        </li>
+        <li class="pstep" data-i="2">
+          <span class="pn">03</span>
+          <h3>Каркас и перекрытия</h3>
+          <p>Колонны, балки и плиты перекрытий поднимаются этаж за этажом, пока здание не примет полную форму.</p>
+          <div class="step-img"><img src="../img/structure-s.webp" alt="Этаж с колоннами и балками" loading="lazy"></div>
+        </li>
+        <li class="pstep" data-i="3">
+          <span class="pn">04</span>
+          <h3>Фасад, окна и системы</h3>
+          <p>Стены штукатурятся, устанавливаются окна, подводятся электричество и коммуникации.</p>
+          <div class="step-img"><img src="../img/windows-s.webp" alt="Помещение с установленными окнами и оштукатуренными стенами" loading="lazy"></div>
+        </li>
+        <li class="pstep" data-i="4">
+          <span class="pn">05</span>
+          <h3>Отделка и сдача</h3>
+          <p>Благоустраивается двор и территория, здание проверяется и передаётся заказчику.</p>
+          <div class="step-img"><img src="../img/court-arch-s.webp" alt="Готовый внутренний двор" loading="lazy"></div>
+        </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="light">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <p class="eyebrow">Портфель</p>
+          <h2>Наши здания</h2>
+        </div>
+        <p class="lead">Избранные здания из нашего портфеля в Ташкенте.</p>
       </div>
       <div class="grid">
-        <article class="card reveal" data-type="warehouse">
+        <article class="card reveal">
+          <div class="ph"><img src="../img/facade-s.webp" alt="Двухэтажное коммерческое здание на Олтинсой 8/3, Ташкент" loading="lazy"><span class="badge">Коммерческое здание</span></div>
+          <div class="body">
+            <span class="loc">Алмазарский район, Ташкент</span>
+            <h3>Здание на Олтинсой 8/3</h3>
+            <dl class="specs">
+              <div><dt>Площадь</dt><dd>2 000 м² · участок 9 соток</dd></div>
+              <div><dt>Этажи</dt><dd>2 + подвал</dd></div>
+              <div><dt>Особенность</dt><dd>Двор со сквозной аркой</dd></div>
+            </dl>
+          </div>
+        </article>
+        <article class="card reveal">
           <div class="ph"><img src="../img/p3-s.webp" alt="Склад 670 м² в Бектемире изнутри" loading="lazy"><span class="badge">Склад</span></div>
           <div class="body">
             <span class="loc">Куйлюк, Бектемирский район</span>
             <h3>Склад 670 м²</h3>
             <dl class="specs">
-              <div><dt>Площадь</dt><dd>670 м² · платите за 500</dd></div>
-              <div><dt>Потолки</dt><dd class="na">По запросу</dd></div>
-              <div><dt>Мощность</dt><dd>350–380 кВт</dd></div>
+              <div><dt>Площадь</dt><dd>670 м²</dd></div>
               <div><dt>Этажи</dt><dd>2 · грузовой лифт 1,5 т</dd></div>
-              <div><dt>Подъезд</dt><dd>Зал с воротами, парковка</dd></div>
+              <div><dt>Мощность</dt><dd>350–380 кВт</dd></div>
             </dl>
-            <div class="foot">
-              <span class="price"><b>60 000 сум</b>за м² в месяц, с НДС</span>
-              <span class="links">
-                <a class="pdf" href="../docs/sklad-670-ru.pdf" data-l target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>Листовка PDF</a>
-                <a class="more" href="https://bektemir-arenda.netlify.app/sklad-670/" target="_blank" rel="noopener">Подробнее →</a>
-              </span>
-            </div>
           </div>
         </article>
-        <article class="card reveal" data-type="warehouse">
+        <article class="card reveal">
           <div class="ph"><img src="../img/s303-facade-s.webp" alt="Фасад склада 303 м² с навесом над воротами" loading="lazy"><span class="badge">Склад</span></div>
           <div class="body">
             <span class="loc">Куйлюк, Бектемирский район</span>
             <h3>Склад 303 м²</h3>
             <dl class="specs">
-              <div><dt>Площадь</dt><dd>303 м² · с навесом 28 м²</dd></div>
+              <div><dt>Площадь</dt><dd>303 м² · навес 28 м²</dd></div>
               <div><dt>Потолки</dt><dd>4 м</dd></div>
               <div><dt>Мощность</dt><dd>350–380 кВт</dd></div>
-              <div><dt>Этажи</dt><dd>1 · зал 28,1 × 9,1 м</dd></div>
-              <div><dt>Подъезд</dt><dd>Ворота под навесом, большой двор</dd></div>
             </dl>
-            <div class="foot">
-              <span class="price"><b>60 000 сум</b>за м² в месяц, с НДС</span>
-              <span class="links">
-                <a class="pdf" href="../docs/sklad-303-ru.pdf" data-l target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>Листовка PDF</a>
-                <a class="more" href="https://bektemir-arenda.netlify.app/sklad-303/" target="_blank" rel="noopener">Подробнее →</a>
-              </span>
-            </div>
           </div>
         </article>
-        <article class="card reveal" data-type="building">
-          <div class="ph"><img src="../img/facade-s.webp" alt="Двухэтажное коммерческое здание на Олтинсой 8/3, Ташкент" loading="lazy"><span class="badge">Коммерческое здание</span></div>
+        <article class="card reveal">
+          <div class="ph"><img src="../img/muqimiy-facade-s.webp" alt="Двухэтажное здание под ресторан на улице Мукими, Ташкент" loading="lazy"><span class="badge">Здание под ресторан</span></div>
           <div class="body">
-            <span class="loc">Олтинсой 8/3, Алмазарский район</span>
-            <h3>Здание 2 000 м²</h3>
+            <span class="loc">ул. Мукими 3/2, Ташкент</span>
+            <h3>Двухэтажное здание</h3>
             <dl class="specs">
-              <div><dt>Площадь</dt><dd>2 000 м² · участок 9 соток</dd></div>
-              <div><dt>Потолки</dt><dd>4 м (по проекту)</dd></div>
-              <div><dt>Мощность</dt><dd class="na">По запросу</dd></div>
-              <div><dt>Этажи</dt><dd>2 + подвал</dd></div>
-              <div><dt>Подъезд</dt><dd>Двор со сквозным проездом</dd></div>
+              <div><dt>Этажи</dt><dd>2 · залы на обоих этажах</dd></div>
+              <div><dt>Особенность</dt><dd>Панорамные окна</dd></div>
+              <div><dt>Расположение</dt><dd>Первая линия улицы</dd></div>
             </dl>
-            <div class="foot">
-              <span class="price"><b>По запросу</b>первая линия, торговля и офисы</span>
-              <span class="links">
-                <a class="pdf" href="../docs/oltinsoy-8-3-ru.pdf" data-l target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>Листовка PDF</a>
-                <a class="more" href="https://oltinsoy-8-3.netlify.app/" target="_blank" rel="noopener">Подробнее →</a>
-              </span>
-            </div>
           </div>
         </article>
-        <article class="card reveal" data-type="building">
-          <div class="ph"><img src="../img/muqimiy-facade-s.webp" alt="Двухэтажное здание с подвалом на Мукими 3/2, Ташкент" loading="lazy"><span class="badge">Коммерческое здание</span></div>
-          <div class="body">
-            <span class="loc">Мукими 3/2, Чиланзарский район</span>
-            <h3>Здание 369 м²</h3>
-            <dl class="specs">
-              <div><dt>Площадь</dt><dd>369 м² · залы 110 + 70 м²</dd></div>
-              <div><dt>Потолки</dt><dd>3,1–3,2 м</dd></div>
-              <div><dt>Мощность</dt><dd class="na">По запросу</dd></div>
-              <div><dt>Этажи</dt><dd>2 + подвал</dd></div>
-              <div><dt>Подъезд</dt><dd>Вход с улицы, первая линия</dd></div>
-            </dl>
-            <div class="foot">
-              <span class="price"><b>3 700 $</b>в месяц за всё здание</span>
-              <span class="links">
-                <a class="pdf" href="../docs/muqimiy-3-2-ru.pdf" data-l target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>Листовка PDF</a>
-                <a class="more" href="https://rfjnv.github.io/mukimi-3-2/" target="_blank" rel="noopener">Подробнее →</a>
-              </span>
-            </div>
-          </div>
-        </article>
-      </div>
-      <div class="port">
-        <div class="port-head reveal">
-          <p class="eyebrow">Портфель</p>
-          <h3>Здания, которые уже сданы</h3>
-          <p class="lead">Часть наших зданий полностью занята арендаторами. Оставьте заявку — сообщим первыми, когда площадь освободится.</p>
-        </div>
-        <div class="grid two">
-        <article class="card reveal leased">
-          <div class="ph"><img src="../img/wh2-yard-s.webp" alt="Склад с двумя грузовыми воротами и бетонным двором" loading="lazy"><span class="badge">Сдано</span></div>
+        <article class="card reveal">
+          <div class="ph"><img src="../img/wh2-yard-s.webp" alt="Склад с двумя грузовыми воротами и бетонным двором" loading="lazy"><span class="badge">Склад</span></div>
           <div class="body">
             <span class="loc">Ташкент</span>
             <h3>Склад с офисами</h3>
-            <p class="pdesc">Зал с двумя грузовыми воротами, бетонный двор и офисные помещения. Сдано.</p>
+            <dl class="specs">
+              <div><dt>Планировка</dt><dd>Зал + офисные помещения</dd></div>
+              <div><dt>Подъезд</dt><dd>2 грузовых ворот</dd></div>
+              <div><dt>Двор</dt><dd>Бетонный двор</dd></div>
+            </dl>
           </div>
         </article>
-        </div>
-      </div>
-      <div class="grid" style="margin-top:24px">
-        <article class="card card-cta reveal" style="grid-column:1/-1">
-          <p class="eyebrow">Не нашли подходящее?</p>
-          <h3>Расскажите, что нужно, — найдём или построим</h3>
-          <p>Площадь, мощность, высота потолков, разгрузка, район. Пришлём подходящие варианты, в том числе ещё не опубликованные.</p>
-          <div><a class="btn btn-light" href="#contact">Отправить требования</a></div>
+        <article class="card card-cta reveal">
+          <p class="eyebrow">Другие объекты</p>
+          <h3>Полное портфолио по запросу</h3>
+          <p>С радостью покажем другие здания и фотографии объектов.</p>
+          <div><a class="btn btn-light" href="#contact">Запросить портфолио</a></div>
         </article>
       </div>
     </div>
   </section>
 
-  <section id="locations" class="light" style="padding-top:0">
+  <section id="partners">
     <div class="wrap">
       <div class="sec-head reveal">
         <div>
-          <p class="eyebrow">Локации</p>
-          <h2>Где находятся наши здания</h2>
+          <p class="eyebrow">Партнёрам</p>
+          <h2>Сотрудничество с международными компаниями</h2>
         </div>
-        <p class="lead">Три района Ташкента: промышленная зона на юго-востоке и городские улицы на северо-западе и юго-западе.</p>
+        <p class="lead">Мы открыты к партнёрству с иностранными компаниями. Расскажите о вашем проекте, и мы обсудим, как работать вместе.</p>
       </div>
-      <div class="locs">
-        <article class="locc reveal">
-          <p class="eyebrow">Бектемирский район</p>
-          <h3>Куйлюк</h3>
-          <ul><li>Склад 670 м²</li><li>Склад 303 м²</li></ul>
-          <div class="btns">
-            <a class="btn btn-line" href="https://yandex.uz/maps/?text=%D0%9A%D1%83%D0%B9%D0%BB%D1%8E%D0%BA%2C%20%D0%91%D0%B5%D0%BA%D1%82%D0%B5%D0%BC%D0%B8%D1%80%D1%81%D0%BA%D0%B8%D0%B9%20%D1%80%D0%B0%D0%B9%D0%BE%D0%BD%2C%20%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82" target="_blank" rel="noopener">Яндекс Карты</a>
-            <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Kuylyuk%2C+Bektemir+district%2C+Tashkent" target="_blank" rel="noopener">Google Карты</a>
-          </div>
-        </article>
-        <article class="locc reveal">
-          <p class="eyebrow">Алмазарский район</p>
-          <h3>Олтинсой 8/3</h3>
-          <ul><li>Коммерческое здание 2 000 м²</li><li>Первая линия улицы</li></ul>
-          <div class="btns">
-            <a class="btn btn-line" href="https://yandex.uz/maps/10335/tashkent/?ll=69.239921%2C41.356963&amp;mode=routes&amp;rtext=~41.356958%2C69.239171&amp;rtt=mt&amp;ruri=~&amp;z=18" target="_blank" rel="noopener">Яндекс Карты</a>
-            <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=41.356958%2C69.239171" target="_blank" rel="noopener">Google Карты</a>
-          </div>
-        </article>
-        <article class="locc reveal">
-          <p class="eyebrow">Чиланзарский район</p>
-          <h3>Мукими 3/2</h3>
-          <ul><li>Коммерческое здание 369 м²</li><li>Первая линия улицы</li></ul>
-          <div class="btns">
-            <a class="btn btn-line" href="https://yandex.uz/maps/10335/tashkent/?text=Toshkent%2C%20Muqimiy%20ko%27chasi%2C%203%2F2" target="_blank" rel="noopener">Яндекс Карты</a>
-            <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Muqimiy+ko%27chasi+3%2F2%2C+Toshkent" target="_blank" rel="noopener">Google Карты</a>
-          </div>
-        </article>
+      <div class="why" style="margin-top:0">
+        <div class="reveal"><h3>На вашем языке</h3><p>Мы общаемся на английском, русском и узбекском.</p></div>
+        <div class="reveal"><h3>Прозрачный ход работ</h3><p>Каждый этап мы документируем фото и видео с площадки.</p></div>
+        <div class="reveal"><h3>Открыты к разным форматам</h3><p>Расскажите, что нужно, — предложим формат сотрудничества под ваш проект.</p></div>
       </div>
-    </div>
-  </section>
-
-  <section id="how">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <div>
-          <p class="eyebrow">Для иностранных компаний</p>
-          <h2>От первого сообщения до заезда</h2>
-        </div>
-        <p class="lead">Чтобы начать, не обязательно быть в Ташкенте: большую часть можно сделать удалённо.</p>
-      </div>
-      <div class="steps reveal">
-        <div class="step"><h3>Опишите задачу</h3><p>Площадь, вид деятельности, нужная мощность и сроки — через форму, Telegram или e-mail.</p></div>
-        <div class="step"><h3>Просмотр онлайн или вживую</h3><p>Пришлём фото, видео и планировки или покажем помещение по видеосвязи.</p></div>
-        <div class="step"><h3>Согласуем условия</h3><p>Понятные условия аренды и договор, подготовленный вместе с вашей командой.</p></div>
-        <div class="step"><h3>Заезжайте</h3><p>Получите ключи и начинайте работу в помещении, готовом с первого дня.</p></div>
-      </div>
-      <div class="why">
-        <div class="reveal"><h3>Собственник, а не посредник</h3><p>Вы работаете напрямую с компанией, которая строит здания и управляет ими.</p></div>
-        <div class="reveal"><h3>Готово к работе</h3><p>Электричество, коммуникации, охрана и подъезд для фур — всё готово до вашего заезда.</p></div>
-        <div class="reveal"><h3>Реальные фото и характеристики</h3><p>В каждом объявлении — настоящее здание, точные площади и технические данные.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="light" style="padding-bottom:0">
-    <div class="wrap split">
-      <div class="ph-wrap reveal"><img src="../img/hall.webp" alt="Зал внутри здания на Олтинсой 8/3" loading="lazy" data-par=".08"></div>
-      <div class="reveal">
-        <p class="eyebrow">Построено для бизнеса</p>
-        <h2 style="margin:14px 0 20px">Здания, спроектированные под работу компаний</h2>
-        <p class="lead">Широкие пролёты, высокие потолки, внутренние дворы и сквозной проезд. Мы думаем о фурах, сотрудниках и клиентах с первого чертежа — чтобы помещение работало с первого дня.</p>
-        <div style="margin-top:32px"><a class="btn btn-dark" href="#spaces">Смотреть объекты</a></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="brokers">
-    <div class="wrap brokers">
-      <div class="reveal">
-        <p class="eyebrow">Брокерам и агентам</p>
-        <h2 style="margin:14px 0 20px">Ведёте клиента? Поможем.</h2>
-        <p class="lead">Листовки по каждому объекту на английском, русском и узбекском — можно сразу переслать клиенту. За фото, видео, временем показа и условиями сотрудничества пишите нам напрямую.</p>
-        <div style="margin-top:32px"><a class="btn btn-light" href="https://t.me/Madin909" target="_blank" rel="noopener">Написать в Telegram</a></div>
-      </div>
-      <div class="kit reveal" aria-label="Листовки">
-        <div><b>Склад 670 м²</b><span><a href="../docs/sklad-670-en.pdf" target="_blank" rel="noopener" hreflang="en">EN</a><a href="../docs/sklad-670-ru.pdf" target="_blank" rel="noopener" hreflang="ru">RU</a><a href="../docs/sklad-670-uz.pdf" target="_blank" rel="noopener" hreflang="uz">UZ</a></span></div>
-        <div><b>Склад 303 м²</b><span><a href="../docs/sklad-303-en.pdf" target="_blank" rel="noopener" hreflang="en">EN</a><a href="../docs/sklad-303-ru.pdf" target="_blank" rel="noopener" hreflang="ru">RU</a><a href="../docs/sklad-303-uz.pdf" target="_blank" rel="noopener" hreflang="uz">UZ</a></span></div>
-        <div><b>Здание 2 000 м²</b><span><a href="../docs/oltinsoy-8-3-en.pdf" target="_blank" rel="noopener" hreflang="en">EN</a><a href="../docs/oltinsoy-8-3-ru.pdf" target="_blank" rel="noopener" hreflang="ru">RU</a><a href="../docs/oltinsoy-8-3-uz.pdf" target="_blank" rel="noopener" hreflang="uz">UZ</a></span></div>
-        <div><b>Здание 369 м²</b><span><a href="../docs/muqimiy-3-2-en.pdf" target="_blank" rel="noopener" hreflang="en">EN</a><a href="../docs/muqimiy-3-2-ru.pdf" target="_blank" rel="noopener" hreflang="ru">RU</a><a href="../docs/muqimiy-3-2-uz.pdf" target="_blank" rel="noopener" hreflang="uz">UZ</a></span></div>
-      </div>
+      <div class="reveal" style="margin-top:40px"><a class="btn btn-light" href="#contact">Обсудить сотрудничество</a></div>
     </div>
   </section>
 
@@ -711,8 +691,8 @@ footer{background:var(--onyx);padding-top:0;overflow:hidden}
     <div class="wrap contact">
       <div class="reveal">
         <p class="eyebrow">Контакты</p>
-        <h2 style="margin-top:14px">Обсудим ваше помещение</h2>
-        <p class="lead" style="margin-top:18px">Пишите или звоните — на русском, узбекском или английском. Пришлите требования, и мы предложим варианты.</p>
+        <h2 style="margin-top:14px">Обсудим ваш проект</h2>
+        <p class="lead" style="margin-top:18px">Пишите или звоните — на английском, русском или узбекском. Расскажите о вашем проекте, и мы свяжемся с вами.</p>
         <div class="people">
           <div class="person">
             <div><b>Жахонгир</b><a class="tel" href="tel:+998909571114">+998 90 957-11-14</a></div>
@@ -737,18 +717,14 @@ footer{background:var(--onyx);padding-top:0;overflow:hidden}
         <label>Страна<input name="country" autocomplete="country-name"></label>
         <label>Телефон / Telegram<input name="phone" type="tel" autocomplete="tel"></label>
         <label class="full">E-mail<input name="email" type="email" autocomplete="email" required></label>
-        <label>Что ищете
-          <select name="type">
-            <option>Склад</option><option>Производство</option><option>Офис</option><option>Кухня / пищевое производство</option><option>Здание целиком</option><option>Другое</option>
-          </select>
-        </label>
-        <label>Площадь, м²<input name="area" inputmode="numeric" placeholder="например, 500"></label>
-        <label class="full">Подробности<textarea name="message" placeholder="Мощность, высота потолков, разгрузка, сроки, район…"></textarea></label>
+        <label class="full">Ваш проект<textarea name="message" placeholder="Расскажите о проекте: что планируете строить, где и когда."></textarea></label>
         <div class="full"><button class="btn btn-dark" type="submit">Отправить заявку</button></div>
         <p class="full note">Заявка откроется в Telegram — останется нажать «Отправить». Обычно отвечаем в течение одного рабочего дня.</p>
       </form>
     </div>
   </section>
+
+<!--MAIN:END-->
 </main>
 
 <footer>
@@ -776,6 +752,21 @@ footer{background:var(--onyx);padding-top:0;overflow:hidden}
     var url='https://t.me/'+f.getAttribute('data-tg')+'?text='+encodeURIComponent(lines.join('\n'));
     window.open(url,'_blank','noopener');
   });
+})();
+</script>
+
+<script>
+/* Process section: the sticky photo follows the stage that is in the middle of the screen. */
+(function(){
+  var steps=[].slice.call(document.querySelectorAll('.pstep')), figs=[].slice.call(document.querySelectorAll('#pmedia .sm'));
+  if(!steps.length||!('IntersectionObserver' in window)) return;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(!e.isIntersecting) return;
+    var i=+e.target.getAttribute('data-i');
+    steps.forEach(function(s,k){s.classList.toggle('on',k===i)});
+    figs.forEach(function(f,k){f.classList.toggle('on',k===i)});
+  })},{rootMargin:'-42% 0px -42% 0px'});
+  steps.forEach(function(s){io.observe(s)});
 })();
 </script>
 
@@ -956,7 +947,7 @@ addEventListener('DOMContentLoaded',function(){
   var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches, ticking=false;
   function clamp(v){return v<0?0:v>1?1:v}
   function progress(){
-    var hero=document.querySelector('.hero'), fin=document.getElementById('brokers');
+    var hero=document.querySelector('.hero'), fin=document.getElementById('partners');
     var start=hero?hero.offsetHeight*.5:0;
     var end=fin?fin.offsetTop+fin.offsetHeight-innerHeight:document.documentElement.scrollHeight-innerHeight;
     return reduce?1:clamp((scrollY-start)/Math.max(1,end-start));
@@ -1046,7 +1037,7 @@ addEventListener('DOMContentLoaded',function(){
     (function loop(){cx+=(tx-cx)*.18;cy+=(ty-cy)*.18;cur.style.transform='translate3d('+cx.toFixed(1)+'px,'+cy.toFixed(1)+'px,0)';requestAnimationFrame(loop)})();
   }
   // magnetic buttons
-  [].slice.call(document.querySelectorAll('.hero .btn, .nav .btn, .card-cta .btn, #brokers .btn')).forEach(function(b){
+  [].slice.call(document.querySelectorAll('.hero .btn, .nav .btn, .card-cta .btn, #partners .btn')).forEach(function(b){
     b.addEventListener('mousemove',function(e){var r=b.getBoundingClientRect();b.style.transform='translate('+((e.clientX-r.left-r.width/2)*.22).toFixed(1)+'px,'+((e.clientY-r.top-r.height/2)*.32).toFixed(1)+'px)'});
     b.addEventListener('mouseleave',function(){b.style.transform=''});
   });
