@@ -188,7 +188,7 @@ section{padding:clamp(80px,11vw,140px) 0}
 .pdesc{color:#55555c;font-size:15px}
 @media (max-width:640px){.grid.two{grid-template-columns:1fr}}
 /* locations */
-.locs{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.locs{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
 .locc{padding:32px;border-radius:var(--r);background:var(--white);display:flex;flex-direction:column;gap:14px}
 .locc h3{font-size:28px}
 .locc ul{list-style:none;display:grid;gap:6px;color:#55555c;font-size:15px}
@@ -564,6 +564,27 @@ footer{background:var(--onyx);padding-top:0;overflow:hidden}
             </div>
           </div>
         </article>
+        <article class="card reveal" data-type="building">
+          <div class="ph"><img src="../img/muqimiy-facade-s.webp" alt="Двухэтажное здание с подвалом на Мукими 3/2, Ташкент" loading="lazy"><span class="badge">Коммерческое здание</span></div>
+          <div class="body">
+            <span class="loc">Мукими 3/2, Чиланзарский район</span>
+            <h3>Здание 369 м²</h3>
+            <dl class="specs">
+              <div><dt>Площадь</dt><dd>369 м² · залы 110 + 70 м²</dd></div>
+              <div><dt>Потолки</dt><dd>3,1–3,2 м</dd></div>
+              <div><dt>Мощность</dt><dd class="na">По запросу</dd></div>
+              <div><dt>Этажи</dt><dd>2 + подвал</dd></div>
+              <div><dt>Подъезд</dt><dd>Вход с улицы, первая линия</dd></div>
+            </dl>
+            <div class="foot">
+              <span class="price"><b>3 700 $</b>в месяц за всё здание</span>
+              <span class="links">
+                <a class="pdf" href="../docs/muqimiy-3-2-ru.pdf" data-l target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>Листовка PDF</a>
+                <a class="more" href="https://rfjnv.github.io/mukimi-3-2/" target="_blank" rel="noopener">Подробнее →</a>
+              </span>
+            </div>
+          </div>
+        </article>
       </div>
       <div class="port">
         <div class="port-head reveal">
@@ -572,14 +593,6 @@ footer{background:var(--onyx);padding-top:0;overflow:hidden}
           <p class="lead">Часть наших зданий полностью занята арендаторами. Оставьте заявку — сообщим первыми, когда площадь освободится.</p>
         </div>
         <div class="grid two">
-        <article class="card reveal leased">
-          <div class="ph"><img src="../img/muqimiy-facade-s.webp" alt="Двухэтажное здание под ресторан на улице Мукими, Ташкент" loading="lazy"><span class="badge">Сдано</span></div>
-          <div class="body">
-            <span class="loc">ул. Мукими 3/2, Ташкент</span>
-            <h3>Здание под ресторан</h3>
-            <p class="pdesc">Два этажа с залами и панорамными окнами на первой линии улицы. Сдано ресторану.</p>
-          </div>
-        </article>
         <article class="card reveal leased">
           <div class="ph"><img src="../img/wh2-yard-s.webp" alt="Склад с двумя грузовыми воротами и бетонным двором" loading="lazy"><span class="badge">Сдано</span></div>
           <div class="body">
@@ -608,7 +621,7 @@ footer{background:var(--onyx);padding-top:0;overflow:hidden}
           <p class="eyebrow">Локации</p>
           <h2>Где находятся наши здания</h2>
         </div>
-        <p class="lead">Два района Ташкента: промышленная зона на юго-востоке и городская улица на северо-западе.</p>
+        <p class="lead">Три района Ташкента: промышленная зона на юго-востоке и городские улицы на северо-западе и юго-западе.</p>
       </div>
       <div class="locs">
         <article class="locc reveal">
@@ -627,6 +640,15 @@ footer{background:var(--onyx);padding-top:0;overflow:hidden}
           <div class="btns">
             <a class="btn btn-line" href="https://yandex.uz/maps/10335/tashkent/?ll=69.239921%2C41.356963&amp;mode=routes&amp;rtext=~41.356958%2C69.239171&amp;rtt=mt&amp;ruri=~&amp;z=18" target="_blank" rel="noopener">Яндекс Карты</a>
             <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=41.356958%2C69.239171" target="_blank" rel="noopener">Google Карты</a>
+          </div>
+        </article>
+        <article class="locc reveal">
+          <p class="eyebrow">Чиланзарский район</p>
+          <h3>Мукими 3/2</h3>
+          <ul><li>Коммерческое здание 369 м²</li><li>Первая линия улицы</li></ul>
+          <div class="btns">
+            <a class="btn btn-line" href="https://yandex.uz/maps/10335/tashkent/?text=Toshkent%2C%20Muqimiy%20ko%27chasi%2C%203%2F2" target="_blank" rel="noopener">Яндекс Карты</a>
+            <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Muqimiy+ko%27chasi+3%2F2%2C+Toshkent" target="_blank" rel="noopener">Google Карты</a>
           </div>
         </article>
       </div>
@@ -680,6 +702,7 @@ footer{background:var(--onyx);padding-top:0;overflow:hidden}
         <div><b>Склад 670 м²</b><span><a href="../docs/sklad-670-en.pdf" target="_blank" rel="noopener" hreflang="en">EN</a><a href="../docs/sklad-670-ru.pdf" target="_blank" rel="noopener" hreflang="ru">RU</a><a href="../docs/sklad-670-uz.pdf" target="_blank" rel="noopener" hreflang="uz">UZ</a></span></div>
         <div><b>Склад 303 м²</b><span><a href="../docs/sklad-303-en.pdf" target="_blank" rel="noopener" hreflang="en">EN</a><a href="../docs/sklad-303-ru.pdf" target="_blank" rel="noopener" hreflang="ru">RU</a><a href="../docs/sklad-303-uz.pdf" target="_blank" rel="noopener" hreflang="uz">UZ</a></span></div>
         <div><b>Здание 2 000 м²</b><span><a href="../docs/oltinsoy-8-3-en.pdf" target="_blank" rel="noopener" hreflang="en">EN</a><a href="../docs/oltinsoy-8-3-ru.pdf" target="_blank" rel="noopener" hreflang="ru">RU</a><a href="../docs/oltinsoy-8-3-uz.pdf" target="_blank" rel="noopener" hreflang="uz">UZ</a></span></div>
+        <div><b>Здание 369 м²</b><span><a href="../docs/muqimiy-3-2-en.pdf" target="_blank" rel="noopener" hreflang="en">EN</a><a href="../docs/muqimiy-3-2-ru.pdf" target="_blank" rel="noopener" hreflang="ru">RU</a><a href="../docs/muqimiy-3-2-uz.pdf" target="_blank" rel="noopener" hreflang="uz">UZ</a></span></div>
       </div>
     </div>
   </section>
